@@ -8,8 +8,8 @@ font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 
 img{
 animation: blinker 2s linear infinite;
-width: 500px;
-height: 500px;
+width: 5000px;
+height: 5000px;
 }
 
 @keyframes blinker {
