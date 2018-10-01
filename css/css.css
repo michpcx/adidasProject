@@ -7,9 +7,9 @@ font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
 
 img{
-animation: blinker 2s linear infinite;
-width: 5000px;
-height: 5000px;
+animation: blinker 0.5s linear infinite;
+width: 1000px;
+height: 1000px;
   animation-name: spin;
   animation-duration: 5000ms;
   animation-iteration-count: infinite;
