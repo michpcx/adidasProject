@@ -1,36 +1,53 @@
 body{
-background-color: #eeeee5;
-margin: 0;
-padding: 0;
-text-align: center;
-font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";   
+	margin: 0;
+	padding: 0;
+	background-color: grey;
+}
+header{
+ width: 100%;
+ background-color: white;
+}
+#logo{
+font-size: 25px;
+font-family: sans-serif, Arial, Helvetica;
+margin-left:15%;
+padding-top:2%;
+display:inline-block;
+}
+#navigation{
+	display:inline-block;
+	margin-left:20%;
+	margin-bottom:0.7%;
+	width: 50%;
+}
+li{
+display:inline-block;
+padding-right: 4%;
+font-size: 13px;
+font-family: sans-serif, Arial, Helvetica;
+}
+.navigation{
+	color: black;
+	text-decoration: none;
+}
+.navigation:hover{
+	color: #ff9933;
+}
+.active{
+	color: #ff9933;
+}
+.divider{
+	color: #dddddd;
+}
+#slider{
+background-color: #efcd53;
+height:800px;
+}
+#phone{
+	position: relative;
+    left: 50%;
+    top: 150px;
+	height: 70%;
+    width: 40%;
 }
 
-img{
-animation: blinker 1s linear infinite;
-width: 1000px;
-height: 1000px;
-  animation-name: spin;
-  animation-duration: 5000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear; 
-  /* transform: rotate(3deg); */
-   /* transform: rotate(0.3rad);/ */
-   /* transform: rotate(3grad); */ 
-   /* transform: rotate(.03turn);  */
-}
-
-@keyframes blinker {
-  50% {
-    opacity: 0;
-  }
-}
-
-@keyframes spin {
-    from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(360deg);
-    }
-}
