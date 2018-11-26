@@ -1,0 +1,207 @@
+html{
+	scroll-behavior: smooth;
+}
+body {
+	background-color: lightgrey;
+	margin: 0;
+	padding: 0;
+}
+#main{
+	height:100%;
+	width:100%;
+}
+#selection{
+	background-color: white;
+}
+#navigation_bar {
+	background-color: #262626;
+	width: 100%;
+	height: 3rem;
+}
+.filler{
+	width:100%;
+}
+.title {
+	margin: 0 0 0 1rem;
+	padding: 0;
+	color: white;
+	font-size: 2rem;
+	font-family: 'texgyreadventor';
+}
+.title_centre {
+	color: white;
+	font-size: 4.5rem;
+	text-align:center;
+	font-family: 'texgyreadventor';
+	top: 50%;
+	left: 50%;
+	margin: 2.5rem 0 0 -7.5rem;
+	position: absolute;
+}
+.navigation_block{
+	width:7%;
+	height:3%;
+	display: inline-block;
+	margin-left:1%;
+}
+.navigation_link{
+	color:white;
+	font-family: Trebuchet MS, Arial, Helvetica;
+	font-size:1.5rem;
+}
+.space{
+	width:17.8%;
+	height:3%;
+	display: inline-block;
+}
+.centre{
+	margin-left:35%;
+}
+.category_box{
+	background-color:white;
+	height: 100px;
+}
+.category_title{
+	color: black;
+	padding-top:1%;
+	font-size: 3rem;
+	text-align:center;
+	font-family: 'texgyreadventor';
+}
+.category_image{
+	width:100%;
+	background-color:black;
+	height: 0;
+    padding-bottom: 41%;
+    z-index: 1;
+}
+.men{
+	background: url(../assets/men.jpg) no-repeat;
+	background-size:100% auto;
+	background-position: center top;
+}
+.women{
+	background: url(../assets/women.jpg) no-repeat;
+    background-size:100% auto;
+	background-position: center top;
+}
+.kids{
+	background: url(../assets/kids.jpg) no-repeat;
+    background-size:100% auto;
+}
+.adidas_font{
+	color:white;
+	font-family: Trebuchet MS, Arial, Helvetica;
+	font-size:180%;
+}
+.button{
+	display:inline-block;
+	padding:0.50em 1.2em;
+	border:0.1em solid #FFFFFF;
+	margin:30% 0.3em 0.3em 10%;
+	box-sizing: border-box;
+	text-decoration:none;
+	font-weight:300;
+	text-align:center;
+	transition: all 0.2s;
+	background-color:black;
+}
+a.button:hover{
+	color:black;
+	background-color:white;
+}
+.button_left{
+	margin:30% 0.3em 0.3em 10%;
+}
+.button_right{
+	margin:30% 0.3em 0.3em 75%;
+}
+.arrow_down {
+	margin:62.5% 0.3em 0.3em 95%;
+	border: solid white;
+	border-width: 0 6px 6px 0;
+	display: inline-block;
+	padding: 9px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+
+
+
+
+
+
+
+/*      ADIDAS LOGO    */
+.logo-box{
+	width: 700px;
+	height: 230px;
+	top: 50%;
+	left: 50%;
+	margin: -180px 0 0 -250px;
+	position: absolute;
+	overflow: hidden;
+}
+.large-dash, .medium-dash, .small-dash{
+	width: 15%;
+	background: #fff;
+	float: right;
+}
+.logo-box .large-dash{
+	height: 35%;
+	position: absolute;
+	top: 82%;
+	left: 5%;
+	transform: rotate(-30deg);
+}
+.logo-box .medium-dash{
+	height: 315px;
+	position: absolute;
+	top: 40%;
+	left: 28%;
+	transform: rotate(-30deg);
+}
+.logo-box .small-dash{
+	height: 465px;
+	position: absolute;
+	top: 0%;
+	left: 49%;
+	transform: rotate(-30deg);
+}
+
+
+/*      MAIN VIDEO    */
+video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(../assets/main_img.jpg) no-repeat;
+    background-size: cover; 
+}
+
+
+
+/*      ADIDAS FONT    */
+@font-face {
+	font-family: 'texgyreadventor';
+	src: url('../font/texgyreadventor-regular.eot');
+	src: url('../font/texgyreadventor-regular.eot?#iefix') format('embedded-opentype'),
+		url('../font/texgyreadventor-regular.woff2') format('woff2'),
+		url('../font/texgyreadventor-regular.woff') format('woff'),
+		 url('../font/texgyreadventor.otf') format('opentype'),
+       url('../font/texgyreadventor-regular.ttf') format('truetype'),
+		url('../font/texgyreadventor-regular.svg#') format('svg');      
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+}
