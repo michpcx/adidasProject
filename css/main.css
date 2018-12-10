@@ -13,15 +13,18 @@ body {
 #selection{
 	background-color: white;
 }
+#collection{
+	background-color: black;
+}
 #navigation_bar {
 	background-color: #262626;
 	width: 100%;
-	height: 3rem;
+	height: 55px;
 }
 .filler{
 	width:100%;
 }
-.title {
+.title_top {
 	margin: 0 0 0 1rem;
 	padding: 0;
 	color: white;
@@ -39,30 +42,38 @@ body {
 	position: absolute;
 }
 .navigation_block{
-	width:7%;
-	height:3%;
-	display: inline-block;
-	margin-left:1%;
+	width:33.3333%;
+	height: 55px;
+	float: left;
+	text-align: center;
 }
 .navigation_link{
 	color:white;
 	font-family: Trebuchet MS, Arial, Helvetica;
 	font-size:1.5rem;
 }
-.space{
-	width:17.8%;
-	height:3%;
-	display: inline-block;
+li{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	overflow: hidden;
 }
-.centre{
-	margin-left:35%;
+.navigation_links{
+	display:flex;  
+	list-style:none;
 }
-.category_box{
+.title_box_white{
 	background-color:white;
+	color: black;
 	height: 100px;
 }
+.title_box_black{
+	background-color:black;
+	color: white;
+	height: 100px;
+	margin-top: -4%;
+}
 .category_title{
-	color: black;
 	padding-top:1%;
 	font-size: 3rem;
 	text-align:center;
@@ -94,7 +105,7 @@ body {
 	font-family: Trebuchet MS, Arial, Helvetica;
 	font-size:180%;
 }
-.button{
+.button_black{
 	display:inline-block;
 	padding:0.50em 1.2em;
 	border:0.1em solid #FFFFFF;
@@ -106,9 +117,27 @@ body {
 	transition: all 0.2s;
 	background-color:black;
 }
-a.button:hover{
+a.button_black:hover{
 	color:black;
 	background-color:white;
+}
+.button_white{
+	display:inline-block;
+	color:black;
+	padding:0.50em 1.2em;
+	border:0.1em solid #000;
+	margin:30% 0.3em 0.3em 10%;
+	box-sizing: border-box;
+	text-decoration:none;
+	font-weight:300;
+	text-align:center;
+	transition: all 0.2s;
+	background-color:white;
+}
+a.button_white:hover{
+	color:white;
+	background-color:black;
+	border:0.1em solid #FFFFFF;
 }
 .button_left{
 	margin:30% 0.3em 0.3em 10%;
@@ -116,16 +145,44 @@ a.button:hover{
 .button_right{
 	margin:30% 0.3em 0.3em 75%;
 }
+.button_center{
+	margin:30% 0.3em 0.3em 35%;
+}
 .arrow_down {
-	margin:62.5% 0.3em 0.3em 95%;
 	border: solid white;
 	border-width: 0 6px 6px 0;
-	display: inline-block;
+	display: block;
 	padding: 9px;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
+	position: absolute;
+	top: 92vh;
+	right: 3vw;
 }
-
+.grid1{
+	width:50%;
+	height: 30vh;
+	float: left;
+	background: url(../assets/sobakov.jpg) no-repeat;
+	background-size:100% auto;
+	background-position: center top;
+}
+.grid2{
+	width:25%;
+	height: 30vh;
+	float: left;
+	background: url(../assets/sobakov2.jpg) no-repeat;
+	background-size:100% auto;
+	background-position: center top;
+}
+.grid3{
+	width:25%;
+	height: 30vh;
+	float: left;
+	background: url(../assets/sobakov3.jpg) no-repeat;
+	background-size:100% auto;
+	background-position: center top;
+}
 
 
 
