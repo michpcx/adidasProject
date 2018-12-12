@@ -1,45 +1,102 @@
-html{
+/*      MAIN    */
+html, body{
 	scroll-behavior: smooth;
+	height: 100%;
 }
 body {
 	background-color: lightgrey;
 	margin: 0;
 	padding: 0;
 }
-#main{
-	height:100%;
+header{
+	left: 0;
+	right: 0;	
+}
+.arrow{
+	display: block;
+	padding: 9px;
+	position: absolute;
+	top: 92vh;
+	right: 3vw;
+}
+.title_white{
+	background-color:white;
+	color: black;
+	width: 100%;
+}
+.title_black{
+	background-color:black;
+	color: white;
+	width: 100%;
+}
+.title_white h1, .title_black h1{
+	padding-top:1%;
+	padding-bottom:1%;
+	font-size: 3rem;
+	text-align:center;
+	font-family: 'adidas';
+}
+.extra_margin{
+	margin-top: -40px;
+}
+.men_box{
+	margin-top: -40px;
+}
+.men_box, .women_box, .kids_box{
+	position:relative;
+}
+.first_selection{
 	width:100%;
 }
-#selection{
-	background-color: white;
+.sobakov_wrapper{
+	margin-top: -40px;
+    overflow:hidden;
 }
-#collection{
-	background-color: black;
+.sobakov_item{
+    float:left; 
+    width:50%;
+	position:relative;
 }
-#navigation_bar {
+.sobakov_item2{
+    float:left; 
+    width:25%;
+	position:relative;
+}
+.sobakov_img{
+	width:100%;
+}
+.pureboost_box1{
+	margin-top: -40px;
+}
+.pureboost_box1, .pureboost_box2{
+	position:relative;
+}
+.pureboost_img{
+	width:100%;
+}
+
+
+
+
+/*      NAVIGATION BAR    */
+.navigation_bar{
 	background-color: #262626;
 	width: 100%;
 	height: 55px;
+	position: fixed;
+	z-index:1;
 }
-.filler{
-	width:100%;
-}
-.title_top {
+.navigation_bar a{
+	color:white;
+	font-family: Trebuchet MS, Arial, Helvetica;
+	font-size:1.5rem;
+	}
+.navigation_bar h1{
 	margin: 0 0 0 1rem;
 	padding: 0;
 	color: white;
 	font-size: 2rem;
-	font-family: 'texgyreadventor';
-}
-.title_centre {
-	color: white;
-	font-size: 4.5rem;
-	text-align:center;
-	font-family: 'texgyreadventor';
-	top: 50%;
-	left: 50%;
-	margin: 2.5rem 0 0 -7.5rem;
-	position: absolute;
+	font-family: 'adidas';
 }
 .navigation_block{
 	width:33.3333%;
@@ -47,143 +104,19 @@ body {
 	float: left;
 	text-align: center;
 }
-.navigation_link{
-	color:white;
-	font-family: Trebuchet MS, Arial, Helvetica;
-	font-size:1.5rem;
-}
-li{
+.navigation_block li{
 	display: block;
     margin-left: auto;
     margin-right: auto;
 	overflow: hidden;
 }
-.navigation_links{
-	display:flex;  
-	list-style:none;
+.navigation_block ul{
+	display:flex;
 }
-.title_box_white{
-	background-color:white;
-	color: black;
-	height: 100px;
-}
-.title_box_black{
-	background-color:black;
-	color: white;
-	height: 100px;
-	margin-top: -4%;
-}
-.category_title{
-	padding-top:1%;
-	font-size: 3rem;
-	text-align:center;
-	font-family: 'texgyreadventor';
-}
-.category_image{
+.video{
+	height:100%;
 	width:100%;
-	background-color:black;
-	height: 0;
-    padding-bottom: 41%;
-    z-index: 1;
 }
-.men{
-	background: url(../assets/men.jpg) no-repeat;
-	background-size:100% auto;
-	background-position: center top;
-}
-.women{
-	background: url(../assets/women.jpg) no-repeat;
-    background-size:100% auto;
-	background-position: center top;
-}
-.kids{
-	background: url(../assets/kids.jpg) no-repeat;
-    background-size:100% auto;
-}
-.adidas_font{
-	color:white;
-	font-family: Trebuchet MS, Arial, Helvetica;
-	font-size:180%;
-}
-.button_black{
-	display:inline-block;
-	padding:0.50em 1.2em;
-	border:0.1em solid #FFFFFF;
-	margin:30% 0.3em 0.3em 10%;
-	box-sizing: border-box;
-	text-decoration:none;
-	font-weight:300;
-	text-align:center;
-	transition: all 0.2s;
-	background-color:black;
-}
-a.button_black:hover{
-	color:black;
-	background-color:white;
-}
-.button_white{
-	display:inline-block;
-	color:black;
-	padding:0.50em 1.2em;
-	border:0.1em solid #000;
-	margin:30% 0.3em 0.3em 10%;
-	box-sizing: border-box;
-	text-decoration:none;
-	font-weight:300;
-	text-align:center;
-	transition: all 0.2s;
-	background-color:white;
-}
-a.button_white:hover{
-	color:white;
-	background-color:black;
-	border:0.1em solid #FFFFFF;
-}
-.button_left{
-	margin:30% 0.3em 0.3em 10%;
-}
-.button_right{
-	margin:30% 0.3em 0.3em 75%;
-}
-.button_center{
-	margin:30% 0.3em 0.3em 35%;
-}
-.arrow_down {
-	border: solid white;
-	border-width: 0 6px 6px 0;
-	display: block;
-	padding: 9px;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-	position: absolute;
-	top: 92vh;
-	right: 3vw;
-}
-.grid1{
-	width:50%;
-	height: 30vh;
-	float: left;
-	background: url(../assets/sobakov.jpg) no-repeat;
-	background-size:100% auto;
-	background-position: center top;
-}
-.grid2{
-	width:25%;
-	height: 30vh;
-	float: left;
-	background: url(../assets/sobakov2.jpg) no-repeat;
-	background-size:100% auto;
-	background-position: center top;
-}
-.grid3{
-	width:25%;
-	height: 30vh;
-	float: left;
-	background: url(../assets/sobakov3.jpg) no-repeat;
-	background-size:100% auto;
-	background-position: center top;
-}
-
 
 
 
@@ -226,9 +159,79 @@ a.button_white:hover{
 	left: 49%;
 	transform: rotate(-30deg);
 }
+.logo-box-text{
+	top: 48%;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	overflow: hidden;
+	color: white;
+	font-size: 4rem;
+	font-family: 'adidas';
+}
 
 
-/*      MAIN VIDEO    */
+
+
+/*      BUTTONS    */
+.button_black_small, .button_white_small{
+	padding:0.35em 0.8em;
+	box-sizing: border-box;
+	text-decoration:none;
+	text-align:center;
+	transition: all 0.2s;
+	font-family: Trebuchet MS, Arial, Helvetica;
+	font-size:150%;
+}
+.button_black, .button_white{
+	padding:0.50em 1.2em;
+	box-sizing: border-box;
+	text-decoration:none;
+	text-align:center;
+	transition: all 0.2s;
+	font-family: Trebuchet MS, Arial, Helvetica;
+	font-size:180%;
+}
+.button_black, .button_black_small{
+	border:0.1em solid #FFFFFF;
+	background-color:black;
+	color:white;
+}
+a.button_black:hover, a.button_black_small:hover{
+	color:black;
+	background-color:white;
+}
+.button_white, .button_white_small{
+	border:0.1em solid #000;
+	background-color:white;
+	color:black;
+}
+a.button_white:hover, a.button_white_small:hover{
+	color:white;
+	background-color:black;
+}
+.button_left{
+	position: absolute;
+	left:20%;
+	top:70%;
+}
+.button_right{
+	position: absolute;
+	left:70%;
+	top:70%;
+}
+.button_centre{
+	position: absolute;
+	left:50%;
+	transform: translateX(-50%);
+	top:70%;
+}
+
+
+
+
+
+/*      VIDEO   */
 video#bgvid { 
     position: fixed;
     top: 50%;
@@ -248,16 +251,18 @@ video#bgvid {
 
 
 
+
+
 /*      ADIDAS FONT    */
 @font-face {
-	font-family: 'texgyreadventor';
+	font-family: 'adidas';
 	src: url('../font/texgyreadventor-regular.eot');
 	src: url('../font/texgyreadventor-regular.eot?#iefix') format('embedded-opentype'),
-		url('../font/texgyreadventor-regular.woff2') format('woff2'),
-		url('../font/texgyreadventor-regular.woff') format('woff'),
-		 url('../font/texgyreadventor.otf') format('opentype'),
-       url('../font/texgyreadventor-regular.ttf') format('truetype'),
-		url('../font/texgyreadventor-regular.svg#') format('svg');      
+	url('../font/texgyreadventor-regular.woff2') format('woff2'),
+	url('../font/texgyreadventor-regular.woff') format('woff'),
+	url('../font/texgyreadventor.otf') format('opentype'),
+    url('../font/texgyreadventor-regular.ttf') format('truetype'),
+	url('../font/texgyreadventor-regular.svg#') format('svg');      
 	font-weight: 400;
 	font-style: normal;
 	font-stretch: normal;

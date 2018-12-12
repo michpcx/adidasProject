@@ -1,79 +1,141 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
 
 	<head>
 		<title>adidas - Impossible is Nothing.</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 		<link href="css/main.css" type="text/css" rel="stylesheet"/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="js/main.js"></script>
 	</head>
 
 	<body>
-			<header>
-				<nav id="navigation_bar" >
-							<div class="navigation_block">
-								<ul class="navigation_links">
-									<li><a class="navigation_link">Men</a></li>
-									<li><a class="navigation_link">Women</a></li>
-									<li><a class="navigation_link">Kids</a></li>
-								</ul>
-							</div>
-							<div class="navigation_block">
-								<h1 class="title_top">adidas</h1>
-							</div>
-							<div class="navigation_block">
-								<ul class="navigation_links">
-									<li><a class="navigation_link">Sport</a></li>
-									<li><a class="navigation_link">Collections</a></li>
-									<li><a class="navigation_link">Customizer</a></li>
-								</ul>
-							</div>
-				</nav>
-			</header>
-
-		<section>
+	
+		<header>
+			<nav class="navigation_bar">
+				<div class="navigation_block">
+					<ul>
+						<li><a>Men</a></li>
+						<li><a>Women</a></li>
+						<li><a>Kids</a></li>
+					</ul>
+				</div>
+				<div class="navigation_block">
+					<h1>adidas</h1>
+				</div>
+				<div class="navigation_block">
+					<ul>
+						<li><a>Sport</a></li>
+						<li><a>Collections</a></li>
+						<li><a>Customizer</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		
+		<section class="video">
 			<video playsinline autoplay muted loop id="bgvid">
 				<source src="assets/main_video.webm" type="video/webm">
 				<source src="assets/main_video.mp4" type="video/mp4">
 			</video>
-		</section>
-		<section id="main">
+			
 			<div class="logo-box">
 				<div class="large-dash"></div>
 				<div class="medium-dash"></div>
 				<div class="small-dash"></div>
 			</div>
-			<h1 class="title_centre">adidas</h1>
-		</section>
-		<div class="filler"><div class="arrow_down"></div></div>
-		<section id="selection">
-			<div class="title_box_white">
-				<h1 class="category_title">Build to Defy</h1>
-			</div>
-			<div class="category_image men">
-				<a href ="#" class="button_black button_left adidas_font">For men</a>
-			</div>
-			<div class="category_image women">
-				<a href ="#" class="button_black button_right adidas_font">For women</a>
-			</div>
-			<div class="category_image kids">
-				<a href ="#" class="button_black button_left adidas_font">For kids</a>
-			</div>
-		</section>
-		<section id="collection">
-			<div class="title_box_black">
-				<h1 class="category_title">Sobakov Collection</h1>
-			</div>
-			<div class="grid1">
-				<a href ="#" class="button_white button_center adidas_font">Shop now</a>
-			</div>
-			<div class="grid2">
 			
-			</div>
-			<div class="grid3">
+			<h1 class="logo-box-text">adidas</h1>
 			
+			<img src="assets/arrow.png" height="3%" alt="Arrow Down" class="arrow" />
+		</section>
+		
+		<section>
+			<div class="title_white">
+				<h1>Build to Defy</h1>
+			</div>
+			<div class="men_box">
+				<img src="assets/men.jpg" Alt="For Men" class="first_selection"/>
+				<a href ="#" class="button_black button_left">For men</a>
+			</div>
+			<div class="women_box">
+				<img src="assets/women.jpg" Alt="For Women" class="first_selection"/>
+				<a href ="#" class="button_white button_right">For women</a>
+			</div>
+			<div class="kids_box">
+				<img src="assets/kids.jpg" Alt="For Kids" class="first_selection"/>
+				<a href ="#" class="button_black button_left">For kids</a>
 			</div>
 		</section>
+		
+		<section>
+			<div class="title_black extra_margin">
+				<h1>Sobakov Collection</h1>
+			</div>
+			<div class="sobakov_wrapper" >
+				<div class="sobakov_item">
+					<img src="assets/sobakov.jpg" Alt="Sobakov 1" class="sobakov_img"/>
+					<a href ="#" class="button_white_small button_centre">Shop now</a>
+				</div>
+				<div class="sobakov_item2">
+					<img src="assets/sobakov2.jpg" Alt="Sobakov 2" class="sobakov_img"/>
+					<a href ="#" class="button_black_small button_centre">-></a></a>
+				</div>
+				<div class="sobakov_item2">
+					<img src="assets/sobakov3.jpg" Alt="Sobakov 3" class="sobakov_img"/>
+					<a href ="#" class="button_black_small button_centre">-></a>
+				</div>
+			</div>
+		</section>
+		
+		<section>
+			<div class="title_white extra_margin">
+				<h1>PureBoost Collection</h1>
+			</div>
+			<div class="pureboost_box1">
+				<img src="assets/pureboost.jpg" Alt="PureBoost 1" class="pureboost_img"/>
+				<a href ="#" class="button_white button_left">Show Now</a>
+			</div>
+			<div class="pureboost_box2">
+				<img src="assets/pureboost2.jpg" Alt="PureBoost 2" class="pureboost_img"/>
+				<a href ="#" class="button_white button_right">Show Now</a>
+			</div>
+		</section>
+		
+		<section>
+			<div class="title_black extra_margin">
+				<h1>Heat up your workout</h1>
+			</div>
+			<div>
+				<div> Don't Rest X Sports Bra</div>
+				<a href ="#">Show Now</a>
+			</div>
+			<div>
+				<div>Warp Knit</div>
+				<a href ="#">Show Now</a>
+			</div>
+		</section>
+		
+		<section>
+			<p>Sign up for news and get <span>10% off</span></p>
+			<form>
+				<input type="text" name="email">
+				<div>-></div>
+			</form> 
+		</section>
+		
+		<footer>
+			<p>UK</p>
+			<div>UK Flag</div>
+			<p>About Us</p>
+			<p>Customizer</p>
+			<p>&copy; 2018 ADIDAS Inc.</p>
+		</footer>
+		
+		
+		
+		
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	</body>
 
 </html>
