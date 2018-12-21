@@ -1,2 +1,2 @@
 # michpcx.github.io
-Web Developing Project
+Web Auth Project
