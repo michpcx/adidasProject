@@ -86,10 +86,10 @@ header{
 	background-color: #262626;
 	margin-top: -30px;
 	text-align: center;
-	height: 250px;
+	height: 220px;
 }
 .newsletter p{
-	padding: 0.5%;
+	padding-top: 1.5%;
 	font-size: 1.8rem;
 	text-align:center;
 	font-family: 'adidas';
@@ -121,6 +121,13 @@ footer{
 	background-color: #808080;
 	margin-top: -24px;
 	margin-bottom: -24px;
+	height: 70px;
+}
+footer *{
+	padding:20px;
+}
+footer .flag{
+	vertical-align:middle;
 }
 .links{
 	padding-top: 5px;
@@ -134,11 +141,29 @@ footer{
 	font-family: 'adidas';
 	line-height: 1;
 	background-color:rgba(0,0,0,0.5); 
+}
+.info_box_centre{
 	margin-left: 50%;
 	margin-top: 28%;
 	transform: translateX(-50%);
 }
-.info_box span{
+.info_box_left{
+	font-size: 2.2rem;
+	margin-left: 15%;
+	margin-top: 28%;
+	transform: translateX(-15%);
+}
+.info_box_right{
+	font-size: 2.2rem;
+	margin-left: 85%;
+	margin-top: 28%;
+	transform: translateX(-85%);
+}
+.info_box_left span, .info_box_right span{
+	font-family: 'Karla', Arial, Helvetica;
+	font-size: 1.0rem;
+}
+.info_box_centre span{
 	font-family: Trebuchet MS, Arial, Helvetica;
 	font-size: 0.8rem;
 }

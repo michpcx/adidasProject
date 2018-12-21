@@ -1,17 +1,14 @@
-function windowH() {
-    var wH = $(window).height();
-    
-    $('.filler').css({height: wH});
-}
-
-var scrolled=0;
-var down = document.getElementById('.down');
-$( document ).ready(function() {
-	windowH();
-	
-	
-	$(".arrow_down").click(function(){
-                scrolled=scrolled+976;
-				$([document.documentElement, document.body]).animate({scrollTop: scrolled}, 1000);
-			});
-});
+$(document).ready(function() {
+		var adjustAnchor = function() {
+            var $anchor = $('#scroll-stop'),fixedElementHeight = 55;
+            if ($anchor.length > 0) {
+                $('html, body')
+                    .stop()
+                    .animate({scrollTop: $anchor.offset().top - fixedElementHeight}, 200);
+            }
+        };
+        $("#scroll-button").on('click', function() {
+            adjustAnchor();
+        })
+		document.getElementById("scroll-button").style.cursor = "pointer"; 
+   });

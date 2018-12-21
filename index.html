@@ -7,6 +7,7 @@
 		<link href="css/main.css" type="text/css" rel="stylesheet"/>
 		<link href="css/buttons.css" type="text/css" rel="stylesheet"/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet"> 
 		<script src="js/main.js"></script>
 	</head>
 
@@ -48,10 +49,10 @@
 			
 			<h1 class="logo-box-text">adidas</h1>
 			
-			<img src="assets/arrow.png" height="3%" alt="Arrow Down" class="arrow" />
+			<img src="assets/arrow.png" height="3%" alt="Arrow Down" class="arrow" id="scroll-button"/>
 		</section>
-		
-		<section>
+
+		<section id="scroll-stop">
 			<div class="title_white">
 				<h1>Build to Defy</h1>
 			</div>
@@ -94,12 +95,14 @@
 				<h1>PureBoost Collection</h1>
 			</div>
 			<div class="pureboost_box1">
+				<div class="info_box info_box_left">Pureboost Go Shoes <br><br><span> Built to handle curbs, corners and uneven sidewalks, these natural running shoes have an expanded landing zone and a heel plate for added stability. A lightweight and stretchy knit upper supports your native stride. Energised cushioning works with the flexible outsole to give you a smooth and comfortable ride.</span></div>
 				<img src="assets/pureboost.jpg" Alt="PureBoost 1" class="pureboost_img"/>
-				<a href ="#" class="button_white button_left">Show Now</a>
+				<a href ="#" class="button_white button_right">Show Now</a>
 			</div>
 			<div class="pureboost_box2">
+				<div class="info_box info_box_right">Pureboost Trainer Shoes <br><br><span> Made for running and cross training, these versatile shoes have a breathable knit upper. A strap at the ankle lends extra support. Responsive cushioning provides endless energy return with every stride. Responsive cushioning returns energy to your stride, and the all-terrain outsole provides optimal traction on wet or slippery surfaces. </span></div>
 				<img src="assets/pureboost2.jpg" Alt="PureBoost 2" class="pureboost_img"/>
-				<a href ="#" class="button_white button_right">Show Now</a>
+				<a href ="#" class="button_white button_left">Show Now</a>
 			</div>
 		</section>
 		
@@ -109,12 +112,12 @@
 			</div>
 			<div class="inline_wrapper">
 				<div class="sport_item">
-					<div class="info_box">Don't Rest X Sports Bra <br><br><span> Part of a statement collection inspired by Stella McCartney, this medium-support bra features a subtle embossed print. The lightweight, moisture-wicking fabric keeps you dry as you train. The bra has an easy pullover design with a soft brushed elastic band and removable pads.</span></div>
+					<div class="info_box info_box_centre">Don't Rest X Sports Bra <br><br><span> Part of a statement collection inspired by Stella McCartney, this medium-support bra features a subtle embossed print. The lightweight, moisture-wicking fabric keeps you dry as you train. The bra has an easy pullover design with a soft brushed elastic band and removable pads.</span></div>
 					<img src="assets/sport.jpg" Alt="Sport 1" class="sport_img"/>
 					<a href ="#" class="button_white_small button_centre button_low">Show Now</a>
 				</div>
 				<div class="sport_item">
-					<div class="info_box">Warp Knit <br><br><span> This crop top has a smooth, seamless design that hugs the body like a second skin and gives you full freedom of movement. The lightweight stretch fabric offers ventilation to help you stay cool which uses Climacool technology which keeps you cool and dry in warm weather</span></div>
+					<div class="info_box info_box_centre">Warp Knit <br><br><span> This crop top has a smooth, seamless design that hugs the body like a second skin and gives you full freedom of movement. The lightweight stretch fabric offers ventilation to help you stay cool which uses Climacool technology which keeps you cool and dry in warm weather</span></div>
 					<img src="assets/sport2.jpg" Alt="Sport 2" class="sport_img"/>
 					<a href ="#" class="button_white_small button_centre button_low">Show Now</a>
 				</div>
@@ -131,18 +134,14 @@
 		
 		<footer>
 			<div class="links">
-				<p>UK</p>
-				<img src="assets/uk.png" height="20px" />
-				<p>About Us</p>
-				<p>Customizer</p>
-				<p>&copy; 2018 ADIDAS Inc.</p>
+				<span>UK</span>
+				<img src="assets/uk.png" height="20px" class="flag"/>
+				<span>About Us</span>
+				<span>Customizer</span>
+				<span>&copy; 2018 ADIDAS Inc.</span>
 			</div>
 		</footer>
 		
-		
-		
-		
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	</body>
 
 </html>
