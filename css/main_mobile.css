@@ -206,11 +206,11 @@ footer .flag{
 
 /*      ADIDAS LOGO    */
 .logo-box{
-	width: 30vh;
+	width: 200px;
 	height: 230px;
 	top: 20%;
-	left: 53%;
-	margin: 0 0 0 -90px;
+	left: 50%;
+	transform: translateX(-50%);
 	position: absolute;
 	overflow: hidden;
 }
@@ -236,8 +236,8 @@ footer .flag{
 .logo-box .large-dash{
 	height: 165px;
 	position: absolute;
-	top: 62%;
-	left: 65%;
+	top: 61%;
+	left: 68%;
 	transform: rotate(-30deg);
 }
 .logo-box-text{
