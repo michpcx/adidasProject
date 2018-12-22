@@ -222,22 +222,22 @@ footer .flag{
 .logo-box .small-dash{
 	height: 100px;
 	position: absolute;
-	top: 82%;
-	left: 7%;
+	top: 90%;
+	left: 14%;
 	transform: rotate(-30deg);
 }
 .logo-box .medium-dash{
 	height: 215px;
 	position: absolute;
-	top: 55%;
-	left: 35%;
+	top: 73%;
+	left: 51%;
 	transform: rotate(-30deg);
 }
 .logo-box .large-dash{
-	height: 365px;
+	height: 165px;
 	position: absolute;
-	top: 27%;
-	left: 67%;
+	top: 62%;
+	left: 65%;
 	transform: rotate(-30deg);
 }
 .logo-box-text{
