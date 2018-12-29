@@ -10,5 +10,5 @@ $(document).ready(function() {
         $("#scroll-button").on('click', function() {
             adjustAnchor();
         })
-		document.getElementById("scroll-button").style.cursor = "pointer"; 
+		document.getElementById("scroll-button").style.cursor = "pointer";
    });
