@@ -1,0 +1,46 @@
+.button_black_small, .button_white_small{
+	padding:0.35em 0.8em;
+	box-sizing: border-box;
+	text-decoration:none;
+	text-align:center;
+	transition: all 0.2s;
+	font-family: Trebuchet MS, Arial, Helvetica;
+	font-size:150%;
+}
+.button_black, .button_white{
+	width: 100vw;
+	height: 45px;
+	text-decoration:none;
+	text-align:center;
+	font-family: Trebuchet MS, Arial, Helvetica;
+	font-size:200%;
+	display: inline-block;
+}
+.button_black, .button_black_small{
+	background-color:black;
+	color:white;
+}
+a.button_black:hover, a.button_black_small:hover{
+	color:black;
+	background-color:white;
+}
+.button_white, .button_white_small{
+	background-color:white;
+	color:black;
+}
+a.button_white:hover, a.button_white_small:hover{
+	color:white;
+	background-color:black;
+}
+.button_left{
+	position: relative;
+}
+.button_right{
+position: relative;
+}
+.button_centre{
+position: relative;
+}
+.button_low{
+top: 80%;
+}
