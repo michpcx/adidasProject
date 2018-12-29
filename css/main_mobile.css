@@ -47,14 +47,13 @@ header{
 }
 .inline_wrapper{
 	margin-top: -40px;
-    overflow:hidden;
 }
 .sobakov_item{
 	position:relative;
 }
 .sobakov_item2{
-    float:left;
-    width:50%;
+  float:left;
+  width:50%;
 	position:relative;
 }
 .pureboost_box1, .pureboost_box2{
