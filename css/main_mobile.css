@@ -10,7 +10,7 @@ body {
 }
 header{
 	left: 0;
-	right: 0;	
+	right: 0;
 }
 .arrow{
 	display: block;
@@ -53,7 +53,7 @@ header{
 	position:relative;
 }
 .sobakov_item2{
-    float:left; 
+    float:left;
     width:50%;
 	position:relative;
 }
@@ -80,7 +80,7 @@ header{
 	color: #39e600;
 }
 .newsletter input {
-    border: 4px solid white;  
+    border: 4px solid white;
     padding: 15px;
 	width: 80%;
 }
@@ -123,7 +123,7 @@ footer .flag{
 	width: 400px;
 	font-family: 'adidas';
 	line-height: 1;
-	background-color:rgba(0,0,0,0.5); 
+	background-color:rgba(0,0,0,0.5);
 }
 .info_box_centre{
 	margin-left: 50%;
@@ -159,7 +159,7 @@ footer .flag{
 /*      NAVIGATION BAR    */
 .navigation_bar{
 	background-color: #262626;
-	width: 100%;
+	width: 100vh;
 	height: 55px;
 	position: fixed;
 	z-index:1;
@@ -207,8 +207,8 @@ footer .flag{
 /*      ADIDAS LOGO    */
 .logo-box{
 	width: 200px;
-	height: 230px;
-	top: 20%;
+	height: 100px;
+	top: 40%;
 	left: 50%;
 	transform: translateX(-50%);
 	position: absolute;
@@ -222,26 +222,26 @@ footer .flag{
 .logo-box .small-dash{
 	height: 100px;
 	position: absolute;
-	top: 90%;
+	top: 75%;
 	left: 14%;
 	transform: rotate(-30deg);
 }
 .logo-box .medium-dash{
 	height: 215px;
 	position: absolute;
-	top: 73%;
-	left: 51%;
+	top: 30%;
+	left: 47%;
 	transform: rotate(-30deg);
 }
 .logo-box .large-dash{
 	height: 165px;
 	position: absolute;
-	top: 61%;
-	left: 68%;
+	top: 0%;
+	left: 61%;
 	transform: rotate(-30deg);
 }
 .logo-box-text{
-	top: 48%;
+	top: 44%;
 	left: 50%;
 	transform: translateX(-50%);
 	position: absolute;
@@ -258,7 +258,7 @@ footer .flag{
 
 
 /*      VIDEO   */
-video#bgvid { 
+video#bgvid {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -272,7 +272,7 @@ video#bgvid {
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
     background: url(../assets/main_img.jpg) no-repeat;
-    background-size: cover; 
+    background-size: cover;
 }
 
 
@@ -288,7 +288,7 @@ video#bgvid {
 	url('../font/texgyreadventor-regular.woff') format('woff'),
 	url('../font/texgyreadventor.otf') format('opentype'),
     url('../font/texgyreadventor-regular.ttf') format('truetype'),
-	url('../font/texgyreadventor-regular.svg#') format('svg');      
+	url('../font/texgyreadventor-regular.svg#') format('svg');
 	font-weight: 400;
 	font-style: normal;
 	font-stretch: normal;
