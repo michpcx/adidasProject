@@ -159,10 +159,9 @@ footer .flag{
 /*      NAVIGATION BAR    */
 .navigation_bar{
 	background-color: #262626;
-	width: 100vh;
+	width: 100%;
 	height: 55px;
 	position: fixed;
-	z-index:1;
 }
 .navigation_bar a{
 	color:white;
@@ -209,7 +208,7 @@ footer .flag{
 	width: 200px;
 	height: 100px;
 	top: 40%;
-	left: 50%;
+	left: 52%;
 	transform: translateX(-50%);
 	position: absolute;
 	overflow: hidden;
