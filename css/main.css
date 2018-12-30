@@ -124,6 +124,7 @@ header{
  	position: relative;
 	margin-right: 10px ;
 	color: white;
+	cursor: pointer;
 }
 footer{
 	font-size: 1.2rem;
