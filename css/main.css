@@ -179,26 +179,35 @@ footer .flag{
 	background: #fff;
 	float: right;
 }
-.logo-box .large-dash{
+.logo-box .small-dash{
 	height: 35%;
 	position: absolute;
 	top: 82%;
 	left: 5%;
 	transform: rotate(-30deg);
+	animation-name: small-dask-ani;
+	animation-duration: 2.5s;
+	opacity: 1;
 }
 .logo-box .medium-dash{
-	height: 315px;
+	height: 180px;
 	position: absolute;
-	top: 40%;
-	left: 28%;
+	top: 43.5%;
+	left: 23%;
 	transform: rotate(-30deg);
+	animation-name: medium-dask-ani;
+	animation-duration: 1.8s;
+	opacity: 1;
 }
-.logo-box .small-dash{
-	height: 465px;
+.logo-box .large-dash{
+	height: 280px;
 	position: absolute;
-	top: 0%;
-	left: 49%;
+	top: 5%;
+	left: 41.5%;
 	transform: rotate(-30deg);
+	animation-name: large-dask-ani;
+	animation-duration: 0.8s;
+	opacity: 1;
 }
 .logo-box-text{
 	top: 48%;
@@ -210,10 +219,20 @@ footer .flag{
 	font-size: 4rem;
 	font-family: 'adidas';
 }
+@keyframes large-dask-ani {
+	from {top: -100%;left:22%;opacity:0.0;}
+	to {top: 5%;left:41.5%;opacity:1.0;}
+}
 
+@keyframes medium-dask-ani {
+	from {top: -100%;left:-4%;opacity:0.0;}
+	to {top: 43.5%;left:23%;opacity:1.0;}
+}
 
-
-
+@keyframes small-dask-ani {
+	from {top: -100%;left:-30%;opacity:0.0;}
+	to {top: 82%;left:5%;opacity:1.0;}
+}
 
 
 
