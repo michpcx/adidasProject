@@ -131,18 +131,27 @@ footer .flag{
 	margin-left: 50%;
 	margin-top: 28%;
 	transform: translateX(-50%);
+	display:inline;
+	left: 0;
+	top: 0;
 }
 .info_box_left{
 	font-size: 2.2rem;
 	margin-left: 15%;
 	margin-top: 28%;
 	transform: translateX(-15%);
+	display:inline;
+	left: 0;
+	top: 0;
 }
 .info_box_right{
 	font-size: 2.2rem;
 	margin-left: 85%;
 	margin-top: 28%;
 	transform: translateX(-85%);
+	display:inline;
+	left: 0;
+	top: 0;
 }
 .info_box_left span, .info_box_right span{
 	font-family: 'Karla', Arial, Helvetica;
