@@ -4,7 +4,20 @@ $(document).ready(function() {
         })
 		document.getElementById("scroll-button").style.cursor = "pointer";
 
+    $( ".newsletter_button_link" ).click(function(event) {
+      event.preventDefault();
+      console.log('clicked');
+      $( ".overlay" ).fadeIn( "slow",
+      function() {
+        $( ".overlay" ).delay(5000).fadeOut("slow");
+      });
+    });
 
+    $( ".close" ).click(function(event) {
+      event.preventDefault();
+      console.log('clicked');
+      $( ".overlay" ).hide();
+    });
 
 		$("body").on('click', '.menu_icon', function() {
 			$(".mobile_menu").toggleClass("menu_show");

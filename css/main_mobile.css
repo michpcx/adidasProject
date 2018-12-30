@@ -87,6 +87,35 @@ header{
 	font-family: 'adidas';
 	display:inline-block;
 }
+.newsletter_button_link{
+	cursor: pointer;
+}
+.overlay{
+	position: fixed;
+	text-align: center;
+	top: 10%;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 100px;
+	width:300px;
+	background-color: #83d191;
+	font-family: 'Karla', Arial, Helvetica;
+	border-radius: 3px;
+	display: none;
+	z-index: 10;
+}
+.second_line{
+	background-color: #dfdfdf;
+	height: 85px;
+	margin-top: 10px;
+}
+.close{
+	float: right;
+ 	position: relative;
+	margin-right: 10px ;
+	font-size: 1.5rem;
+	color: white;
+}
 footer{
 	font-size: 1.2rem;
 	text-align:center;
