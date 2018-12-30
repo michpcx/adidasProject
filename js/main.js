@@ -11,4 +11,9 @@ $(document).ready(function() {
             adjustAnchor();
         })
 		document.getElementById("scroll-button").style.cursor = "pointer";
+
+
+		$("body").on('click', '.menu_icon', function() {
+			$(".mobile_menu").toggleClass("menu_show");
+		});
    });
