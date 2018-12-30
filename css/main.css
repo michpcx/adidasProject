@@ -164,57 +164,6 @@ footer .flag{
 
 
 
-
-
-
-/*      NAVIGATION BAR    */
-.navigation_bar{
-	background-color: #262626;
-	width: 100%;
-	height: 55px;
-	position: fixed;
-	z-index:1;
-}
-.navigation_bar a{
-	color:white;
-	font-family: Trebuchet MS, Arial, Helvetica;
-	font-size:1.5rem;
-	}
-.navigation_bar h1{
-	margin: 0 0 0 1rem;
-	padding: 0;
-	color: white;
-	font-size: 2rem;
-	font-family: 'adidas';
-}
-.navigation_block{
-	width:33.3333%;
-	height: 55px;
-	float: left;
-	text-align: center;
-}
-.navigation_block li{
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-	overflow: hidden;
-}
-.navigation_block ul{
-	display:flex;
-}
-.video{
-	height:100%;
-	width:100%;
-}
-.menu_container {
-	display: none;
-}
-
-
-
-
-
-
 /*      ADIDAS LOGO    */
 .logo-box{
 	width: 700px;

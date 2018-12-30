@@ -5,9 +5,11 @@
 		<title>adidas - Impossible is Nothing.</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 		<link rel="stylesheet" media="screen and (min-width: 1000px)" href="css/main.css" />
+		<link rel="stylesheet" media="screen and (min-width: 1000px)" href="css/navbar.css" />
 		<link rel="stylesheet" media="screen and (min-width: 1000px)" href="css/buttons.css" />
 		<link rel='stylesheet' media='screen and (max-width: 999px)' href='css/main_mobile.css' />
 		<link rel="stylesheet" media="screen and (max-width: 999px)" href="css/buttons_mobile.css" />
+		<link rel="stylesheet" media="screen and (max-width: 999px)" href="css/navbar_mobile.css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
 		<script src="js/main.js"></script>
@@ -17,10 +19,25 @@
 
 		<header>
 			<nav class="navigation_bar">
-				<div class="menu_container">
-	 				<div class="bar1"></div>
-	 				<div class="bar2"></div>
-	 				<div class="bar3"></div>
+				<a class="menu_icon">
+					<div class="menu_container">
+		 				<div class="bar1"></div>
+		 				<div class="bar2"></div>
+		 				<div class="bar3"></div>
+					</div>
+				</a>
+				<div class="mobile_menu">
+					<a href="#" class="item_menu">Men</a>
+					<a href="#" class="item_menu">Women</a>
+					<a href="#" class="item_menu">Kids</a>
+					<hr>
+					<a href="#" class="item_menu">Sport</a>
+					<a href="#" class="item_menu">Collections</a>
+					<a href="#" class="item_menu">Customiser</a>
+					<hr>
+					<a href="#" class="item_menu">UK</a>
+					<img src="assets/uk.png" height="20px" class="flag"/>
+					<span>&copy; 2018 ADIDAS Inc.</span>
 				</div>
 				<div class="navigation_block mobHide">
 					<ul>
@@ -36,7 +53,7 @@
 					<ul>
 						<li><a>Sport</a></li>
 						<li><a>Collections</a></li>
-						<li><a>Customizer</a></li>
+						<li><a>Customiser</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -144,12 +161,12 @@
 				<span>UK</span>
 				<img src="assets/uk.png" height="20px" class="flag"/>
 				<span>About Us</span>
-				<span>Customizer</span>
+				<span>Customiser</span>
 				<span>&copy; 2018 ADIDAS Inc.</span>
 			</div>
 		</footer>
 
-
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 	</body>
 
 </html>
