@@ -22,7 +22,9 @@ $(document).ready(function() {
 		$("body").on('click', '.menu_icon', function() {
 			$(".mobile_menu").toggleClass("menu_show");
 		})
-   });
+
+
+  });
 
 
 
@@ -34,3 +36,7 @@ var adjustAnchor = function() {
 							 .animate({scrollTop: $anchor.offset().top - fixedElementHeight}, 200);
 			 }
 	 };
+
+function animateMenu(x) {
+    x.classList.toggle("change");
+};
