@@ -131,6 +131,10 @@ footer *{
 	padding:5px;
 	display: block;
 }
+footer a{
+	color: white;
+	text-decoration: none;
+}
 footer .flag{
 	margin-left: auto;
 	margin-right: auto;
