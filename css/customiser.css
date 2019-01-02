@@ -175,7 +175,7 @@ canvas{
 #price_breakdown_table .border-top{
 	border-top: 1px solid grey;
 }
-.buy_button_table{
+.buy_button_table, .reset_button_table{
 	text-align: center;
 }
 .buy_button{
@@ -192,6 +192,20 @@ canvas{
 	transition: all 0.2s;
 	cursor: pointer;
 }
-.buy_button .button_margin{
+.button_margin{
 	padding-top: 5px;
+}
+.reset_button{
+	text-decoration: none;
+	color: white;
+	background-color: grey;
+	display: block;
+	height: 30px;
+}
+.reset_button:hover, .reset_button:active {
+	color: black;
+	background-color: white;
+	border: 1px solid grey;
+	cursor: pointer;
+	transition: all 0.2s;
 }

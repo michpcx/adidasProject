@@ -169,3 +169,51 @@ canvas{
 	border:1px solid grey;
 	display:inline-block;
 }
+#price_breakdown{
+	position: relative;
+	left: 50%;
+	transform: translateX(-25%);
+}
+#price_breakdown_table{
+	width: 50%;
+	height: 30%;
+	background-color: white;
+  border-collapse: collapse;
+	font-family: 'Karla', Arial, Helvetica;
+	margin-top: 30px;
+}
+#price_breakdown_table .border-top{
+	border-top: 1px solid grey;
+}
+.buy_button_table, .reset_button_table{
+	text-align: center;
+}
+.buy_button{
+	text-decoration: none;
+	color: white;
+	background-color: black;
+	display: block;
+	height: 30px;
+}
+.buy_button:hover, .buy_button:active {
+	color: black;
+	background-color: white;
+	border: 1px solid grey;
+	cursor: pointer;
+}
+.button_margin{
+	padding-top: 5px;
+}
+.reset_button{
+	text-decoration: none;
+	color: white;
+	background-color: grey;
+	display: block;
+	height: 30px;
+}
+.reset_button:hover, .reset_button:active {
+	color: black;
+	background-color: white;
+	border: 1px solid grey;
+	cursor: pointer;
+}
