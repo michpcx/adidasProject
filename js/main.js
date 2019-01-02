@@ -18,10 +18,17 @@ $(document).ready(function() {
       });
     };
 
-    // If newsletter button is pressed, show message box
+    // If newsletter button is pressed or buy now button, show message box
     $( ".newsletter_button_link" ).click(function(event) {
       event.preventDefault();
+      $( ".overlay" ).fadeIn( "slow",
+      function() {
+        $( ".overlay" ).delay(5000).fadeOut("slow");
+      });
+    });
+    $( ".buy_button" ).click(function(event) {
       console.log('clicked');
+      event.preventDefault();
       $( ".overlay" ).fadeIn( "slow",
       function() {
         $( ".overlay" ).delay(5000).fadeOut("slow");
@@ -31,7 +38,6 @@ $(document).ready(function() {
     // If close button is pressed on message box, close the message box
     $( ".close" ).click(function(event) {
       event.preventDefault();
-      console.log('clicked');
       $( ".overlay" ).hide();
     });
 
