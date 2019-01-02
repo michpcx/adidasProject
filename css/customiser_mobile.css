@@ -171,11 +171,11 @@ canvas{
 }
 #price_breakdown{
 	position: relative;
-	left: 50%;
-	transform: translateX(-25%);
+	left: 10%;
+	width: 80%
 }
 #price_breakdown_table{
-	width: 50%;
+	width: 100%;
 	height: 30%;
 	background-color: white;
   border-collapse: collapse;
