@@ -1,4 +1,5 @@
 $(document).ready(function() {
+      // Initializing variables
       var part = 1;
       var shoe = 1;
       var total = 89.99;
@@ -6,6 +7,7 @@ $(document).ready(function() {
       var soles_added = 0;
       var stripes_added = 0;
 
+      // If first color is pressed, check with shoe is selected, check which part is selected and change that part
       $("#color1").click(function () {
         if(shoe == 1){
         if(part == 1){
@@ -245,7 +247,7 @@ $(document).ready(function() {
 
 
 
-
+      // Part selection
       $("#laces").click(function () {
         part = 1;
       });
@@ -257,6 +259,8 @@ $(document).ready(function() {
       });
 
 
+
+      // Shoe selection (and reset)
       $("#men").click(function () {
         shoe = 1;
         var img = 'assets/custom/sobakov/sobakov_black.jpg';
@@ -268,6 +272,22 @@ $(document).ready(function() {
         var img = 'assets/custom/sobakov/sobakov_black_sole_3.png';
         $('#layer4').css("background-image", "url(" + img + ")");
         $(".base").text("Base Sobakov Men");
+        if(stripes_added == 1){
+          stripes_added = 0;
+          total -= 14.99;
+          $('#extra_stripes').remove();
+        }
+        if(soles_added == 1){
+          soles_added = 0;
+          total -= 19.99;
+          $('#extra_soles').remove();
+        }
+        if(laces_added == 1){
+          laces_added = 0;
+          total -= 9.99;
+          $('#extra_laces').remove();
+        }
+        $(".total").text("£" + Math.round(total * 100) / 100);
       });
       $("#women").click(function () {
         shoe = 2;
@@ -280,10 +300,27 @@ $(document).ready(function() {
         var img = 'assets/custom/sobakov/sobakov2_pink_sole.png';
         $('#layer4').css("background-image", "url(" + img + ")");
         $(".base").text("Base Sobakov Women");
+        if(stripes_added == 1){
+          stripes_added = 0;
+          total -= 14.99;
+          $('#extra_stripes').remove();
+        }
+        if(soles_added == 1){
+          soles_added = 0;
+          total -= 19.99;
+          $('#extra_soles').remove();
+        }
+        if(laces_added == 1){
+          laces_added = 0;
+          total -= 9.99;
+          $('#extra_laces').remove();
+        }
+        $(".total").text("£" + Math.round(total * 100) / 100);
       });
 
 
 
+      // When reset button is pressed, the prices and shoe resets
       $(".reset_button").click(function () {
         var img = 'assets/custom/sobakov/sobakov_black.jpg';
         $('#layer1').css("background-image", "url(" + img + ")");
