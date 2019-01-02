@@ -18,7 +18,7 @@ body{
 	transform: translateX(-50%);
 }
 #layer1{
-	background: url('../assets/custom/sobakov/sobakov_black.png');
+	background: url('../assets/custom/sobakov/sobakov_black.jpg');
 	background-repeat: no-repeat;
  	background-size: 100% 100%;
 	position: absolute;
@@ -133,9 +133,65 @@ canvas{
 	background-size: 100% 100%;
 	cursor: pointer;
 }
-/*footer {
-	position: absolute;
-  right: 0;
-  bottom: 24px;
-  left: 0;
-}*/
+#shoe_choice{
+	margin-top: 5%;
+	left:50%;
+	transform: translateX(-7.6%);
+	text-align: center;
+}
+#men{
+	width: 150px;
+	height: 150px;
+	background-image: url('../assets/custom/sobakov/sobakov_black.jpg');
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	cursor: pointer;
+	border:1px solid grey;
+	display:inline-block;
+}
+#women{
+	width: 150px;
+	height: 150px;
+	background-image: url('../assets/custom/sobakov/sobakov2_pink.jpg');
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	cursor: pointer;
+	border:1px solid grey;
+	display:inline-block;
+}
+#price_breakdown_table{
+	position: relative;
+	width: 20%;
+	height: 20%;
+	background-color: white;
+  border-collapse: collapse;
+	font-family: 'Karla', Arial, Helvetica;
+	margin-top: -170px;
+	margin-right: 10%;
+	float: right;
+}
+#price_breakdown_table .border-top{
+	border-top: 1px solid grey;
+}
+.buy_button_table{
+	text-align: center;
+}
+.buy_button{
+	text-decoration: none;
+	color: white;
+	background-color: black;
+	display: block;
+	height: 30px;
+}
+.buy_button:hover, .buy_button:active {
+	color: black;
+	background-color: white;
+	border: 1px solid grey;
+	transition: all 0.2s;
+	cursor: pointer;
+}
+.buy_button .button_margin{
+	padding-top: 5px;
+}

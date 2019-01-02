@@ -14,14 +14,14 @@ body{
 }
 #customiser_output{
 	position: relative;
-	margin-top: -100px;
+	margin-top: -70px;
 	width: 70%;
 	z-index: -1;
 	left: 50%;
 	transform: translateX(-50%);
 }
 #layer1{
-	background: url('../assets/custom/sobakov/sobakov_black.png');
+	background: url('../assets/custom/sobakov/sobakov_black.jpg');
 	background-repeat: no-repeat;
  	background-size: 100% 100%;
 	position: absolute;
@@ -68,8 +68,8 @@ canvas{
 }
 #color1{
 	border-radius: 50%;
-	width: 50px;
-	height: 50px;
+	width: 65px;
+	height: 65px;
 	background-color: pink;
 	margin-left: 20px;
 	cursor: pointer;
@@ -77,8 +77,8 @@ canvas{
 }
 #color2{
 	border-radius: 50%;
-	width: 50px;
-	height: 50px;
+	width: 65px;
+	height: 65px;
 	background-color: #b3b3b3;
 	margin-left: 20px;
 	cursor: pointer;
@@ -86,8 +86,8 @@ canvas{
 }
 #color3{
 	border-radius: 50%;
-	width: 50px;
-	height: 50px;
+	width: 65px;
+	height: 65px;
 	background-color: #333333;
 	margin-left: 20px;
 	cursor: pointer;
@@ -95,8 +95,8 @@ canvas{
 }
 #color4{
 	border-radius: 50%;
-	width: 50px;
-	height: 50px;
+	width: 65px;
+	height: 65px;
 	background-color: #42a5e4;
 	margin-left: 20px;
 	cursor: pointer;
@@ -108,8 +108,8 @@ canvas{
 	margin-top:0%;
 }
 #laces{
-	width: 50px;
-	height: 50px;
+	width: 65px;
+	height: 65px;
 	background-image: url('../assets/custom/parts/lace.png');
 	background-color: white;
 	border-radius: 50%;
@@ -120,8 +120,8 @@ canvas{
 	display:inline-block;
 }
 #soles{
-	width: 50px;
-	height: 50px;
+	width: 65px;
+	height: 65px;
 	background-image: url('../assets/custom/parts/sole.png');
 	background-color: white;
 	border-radius: 50%;
@@ -132,8 +132,8 @@ canvas{
 	display:inline-block;
 }
 #straps{
-	width: 50px;
-	height: 50px;
+	width: 65px;
+	height: 65px;
 	background-image: url('../assets/custom/parts/straps.png');
 	background-color: white;
 	border-radius: 50%;
@@ -141,5 +141,31 @@ canvas{
 	background-size: 100% 100%;
 	margin-left: 20px;
 	cursor: pointer;
+	display:inline-block;
+}
+#shoe_choice{
+	width:100%;
+	text-align: center;
+}
+#men{
+	width: 100px;
+	height: 100px;
+	background-image: url('../assets/custom/sobakov/sobakov_black.jpg');
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	cursor: pointer;
+	border:1px solid grey;
+	display:inline-block;
+}
+#women{
+	width: 100px;
+	height: 100px;
+	background-image: url('../assets/custom/sobakov/sobakov2_pink.jpg');
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	cursor: pointer;
+	border:1px solid grey;
 	display:inline-block;
 }
