@@ -18,6 +18,7 @@ header{
 	position: absolute;
 	top: 92vh;
 	right: 3vw;
+	cursor: pointer;
 }
 .title_white{
 	background-color:white;
@@ -84,8 +85,8 @@ header{
 	color: #39e600;
 }
 .newsletter input {
-    border: 4px solid white;
-    padding: 15px;
+  border: 4px solid white;
+  padding: 15px;
 	width: 80%;
 }
 .newsletter_button{
