@@ -10,6 +10,9 @@ body{
 .navigation_bar{
 	top: 0;
 }
+.title_white{
+	margin-top:55px;
+}
 footer {
   position: absolute;
   right: 0;
