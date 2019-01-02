@@ -2,7 +2,23 @@ $(document).ready(function() {
         $("#scroll-button").on('click', function() {
             adjustAnchor();
         })
-		document.getElementById("scroll-button").style.cursor = "pointer";
+    if (document.getElementById('scroll-button') !== null) {
+      document.getElementById("scroll-button").style.cursor = "pointer";
+    }
+    $('#layer1').height($('#layer1').width() / 1.18);
+    $('#layer2').height($('#layer2').width() / 1.18);
+    $('#layer3').height($('#layer3').width() / 1.18);
+    $('#layer4').height($('#layer4').width() / 1.18);
+
+    if (document.getElementById('customiser') !== null) {
+        $(window).resize(function(){
+        $('#layer1').height($('#layer1').width() / 1.18);
+        $('#layer2').height($('#layer2').width() / 1.18);
+        $('#layer3').height($('#layer3').width() / 1.18);
+        $('#layer4').height($('#layer4').width() / 1.18);
+      });
+    };
+
 
     $( ".newsletter_button_link" ).click(function(event) {
       event.preventDefault();
