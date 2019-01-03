@@ -48,19 +48,9 @@ a {
 a:hover {
 	color: #5C5EDC;
 }
-@media screen and (max-width: 40em) {
-	.bp-header h1 {
-		font-size: 1.8em;
+@media screen and (min-width: 1000px) {
+	.ico {
+		display: none;
 	}
 }
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
-@font-face {
-	font-family: 'bpicons';
-	font-weight: normal;
-	font-style: normal;
-	src: url('../fonts/bpicons/bpicons.eot');
-	src: url('../fonts/bpicons/bpicons.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/bpicons/bpicons.woff') format('woff'),
-	url('../fonts/bpicons/bpicons.ttf') format('truetype'),
-	url('../fonts/bpicons/bpicons.svg#bpicons') format('svg');
-} /* Made with http://icomoon.io/ */
