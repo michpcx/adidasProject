@@ -1,0 +1,66 @@
+.main_img{
+	margin-top: 40px;
+	width:100%;
+}
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+html {
+	overflow-y: scroll;
+}
+body,
+html {
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
+	color: #202020;
+	background: lightgrey;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+ul{
+	text-align: left;
+}
+/* Helper classes */
+.cf:before,
+.cf:after {
+	content: ' ';
+	display: table;
+}
+.cf:after {
+	clear: both;
+}
+.hidden {
+	position: absolute;
+	opacity: 0;
+	pointer-events: none;
+}
+a {
+	text-decoration: none;
+	color: #1b4b6e;
+	outline: none;
+}
+a:hover {
+	color: #5C5EDC;
+}
+@media screen and (max-width: 40em) {
+	.bp-header h1 {
+		font-size: 1.8em;
+	}
+}
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+@font-face {
+	font-family: 'bpicons';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/bpicons/bpicons.eot');
+	src: url('../fonts/bpicons/bpicons.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/bpicons/bpicons.woff') format('woff'),
+	url('../fonts/bpicons/bpicons.ttf') format('truetype'),
+	url('../fonts/bpicons/bpicons.svg#bpicons') format('svg');
+} /* Made with http://icomoon.io/ */
