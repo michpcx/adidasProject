@@ -26,6 +26,16 @@ body {
 ul{
 	text-align: left;
 }
+footer{
+	margin-bottom: 83px;
+}
+.footer_filler{
+	height: 15px;
+	padding: 0;
+}
+.flag{
+	padding: 0;
+}
 /* Helper classes */
 .cf:before,
 .cf:after {
@@ -47,6 +57,79 @@ a {
 }
 a:hover {
 	color: #5C5EDC;
+}
+.shopping_cart{
+	position: fixed;
+	bottom: 100px;
+	right: 5px;
+	height: 180px;
+	width:300px;
+	color: white;
+	background-color: #131415;
+	font-family: 'Karla', Arial, Helvetica;
+	border-radius: 3px;
+	z-index: 15;
+	display: none;
+}
+.shopping_cart_total{
+	display:block;
+	text-align: center;
+	font-size: 120%;
+}
+.shopping_cart_cost{
+	display:block;
+	text-align: right;
+	font-size: 100%;
+	margin-right: 20px;
+}
+.basket_icon{
+	position: fixed;
+	text-align: center;
+	bottom: 87px;
+	right: 20px;
+	height:25px;
+	width:25px;
+	background-color: #131415;
+	z-index: 16;
+	transform: rotate(45deg);
+	display: none;
+}
+.table_text{
+	color: white;
+}
+table *{
+	color: white;
+}
+
+
+
+
+
+
+@media screen and (max-width: 640px){
+	.shopping_cart{
+		bottom: 70px;
+		width: 95%;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.basket_icon{
+		bottom: 60px;
+		right: 30px;
+		height:25px;
+		width:25px;
+		background-color: #131415;
+		z-index: 16;
+		transform: rotate(45deg);
+	}
+	footer{
+		margin-bottom: 55px;
+	}
+}
+@media screen and (min-width: 640px) and (max-width: 999px){
+	.ico {
+		display: none;
+	}
 }
 @media screen and (min-width: 1000px) {
 	.ico {

@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    
     // Function which allows to scroll to specific point after pressing an arrow
     $("#scroll-button").on('click', function() {
         adjustAnchor();
@@ -45,6 +46,7 @@ $(document).ready(function() {
 		$("body").on('click', '.menu_icon', function() {
 			$(".mobile_menu").toggleClass("menu_show");
 		})
+
 
 
   });
