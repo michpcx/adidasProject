@@ -50,14 +50,6 @@ footer{
 	opacity: 0;
 	pointer-events: none;
 }
-a {
-	text-decoration: none;
-	color: #1b4b6e;
-	outline: none;
-}
-a:hover {
-	color: #5C5EDC;
-}
 .shopping_cart{
 	position: fixed;
 	bottom: 100px;
@@ -97,9 +89,6 @@ a:hover {
 	transform: rotate(45deg);
 	visibility:hidden;
 }
-.offer{
-	text-decoration: line-through;
-}
 table *{
 	color: white;
 }
@@ -109,17 +98,17 @@ hr{
 #cartcontent{
 	width: 90%;
 }
-.buy_button_table, .reset_button_table{
+.buy_button_div, .reset_button_div{
 	text-align: center;
 }
-.buy_button{
+.cart_buy_button{
 	text-decoration: none;
 	color: white;
 	background-color: black;
 	display: block;
 	height: 30px;
 }
-.buy_button:hover, .buy_button:active {
+.cart_buy_button:hover, .cart_buy_button:active {
 	color: black;
 	background-color: white;
 	border: 1px solid grey;
@@ -129,14 +118,14 @@ hr{
 .button_margin{
 	padding-top: 5px;
 }
-.reset_button{
+.cart_reset_button{
 	text-decoration: none;
 	color: white;
 	background-color: grey;
 	display: block;
 	height: 30px;
 }
-.reset_button:hover, .reset_button:active {
+.cart_reset_button:hover, .cart_reset_button:active {
 	color: black;
 	background-color: white;
 	border: 1px solid grey;
@@ -167,6 +156,18 @@ hr{
 	}
 	footer{
 		margin-bottom: 55px;
+	}
+	.cart_buy_button:hover, .cart_buy_button:active {
+		color: black;
+		background-color: white;
+		border: 1px solid grey;
+		cursor: pointer;
+	}
+	.cart_reset_button:hover, .cart_reset_button:active {
+		color: black;
+		background-color: white;
+		border: 1px solid grey;
+		cursor: pointer;
 	}
 }
 @media screen and (min-width: 640px) and (max-width: 999px){

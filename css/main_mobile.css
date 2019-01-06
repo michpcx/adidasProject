@@ -90,7 +90,7 @@ header{
 .newsletter_button_link{
 	cursor: pointer;
 }
-.overlay{
+.overlay, .overlay2{
 	position: fixed;
 	text-align: center;
 	top: 10%;
@@ -98,18 +98,23 @@ header{
 	transform: translateX(-50%);
 	height: 100px;
 	width:300px;
-	background-color: #83d191;
 	font-family: 'Karla', Arial, Helvetica;
 	border-radius: 3px;
 	display: none;
 	z-index: 10;
+}
+.overlay{
+	background-color: #83d191;
+}
+.overlay2{
+	background-color: #d18c83;
 }
 .second_line{
 	background-color: #dfdfdf;
 	height: 85px;
 	margin-top: 10px;
 }
-.close{
+.close, .close2{
 	float: right;
  	position: relative;
 	margin-right: 10px ;

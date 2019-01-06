@@ -26,6 +26,22 @@ $(document).ready(function() {
   });
 
 
+  $( ".cart_buy_button" ).click(function(event) {
+    event.preventDefault();
+    if(totalCost != 0){
+    $( ".overlay" ).fadeIn( "slow",
+    function() {
+      $( ".overlay" ).delay(5000).fadeOut("slow");
+    });
+  }else{
+    $( ".overlay2" ).fadeIn( "slow",
+    function() {
+      $( ".overlay2" ).delay(5000).fadeOut("slow");
+    });
+  }
+  });
+
+
   $( ".action--buy" ).click(function(event, source) {
     var name = $(this).attr("name_data");
     var price = $(this).attr("price_data");

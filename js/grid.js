@@ -4,7 +4,7 @@
  *
  * Licensed under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
- * 
+ *
  * Copyright 2015, Codrops
  * http://www.codrops.com
  */
@@ -57,6 +57,8 @@
 		// cart
 		cart = document.querySelector('.cart'),
 		cartItems = cart.querySelector('.cart__count');
+    var cart2 = document.querySelector('.overlay'),
+    cartItems2 = cart2.querySelector('.cart_items_count');
 
 	function init() {
 		// preload images
@@ -124,6 +126,7 @@
 	function addToCart() {
 		classie.add(cart, 'cart--animate');
 		setTimeout(function() {cartItems.innerHTML = Number(cartItems.innerHTML) + 1;}, 200);
+    cartItems2.innerHTML = Number(cartItems2.innerHTML) + 1;
 		onEndAnimation(cartItems, function() {
 			classie.remove(cart, 'cart--animate');
 		});

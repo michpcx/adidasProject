@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    
+
     // Function which allows to scroll to specific point after pressing an arrow
     $("#scroll-button").on('click', function() {
         adjustAnchor();
@@ -28,7 +28,6 @@ $(document).ready(function() {
       });
     });
     $( ".buy_button" ).click(function(event) {
-      console.log('clicked');
       event.preventDefault();
       $( ".overlay" ).fadeIn( "slow",
       function() {
@@ -40,6 +39,11 @@ $(document).ready(function() {
     $( ".close" ).click(function(event) {
       event.preventDefault();
       $( ".overlay" ).hide();
+    });
+
+    $( ".close2" ).click(function(event) {
+      event.preventDefault();
+      $( ".overlay2" ).hide();
     });
 
     // If menu buttom is pressed on mobile, slide menu out
