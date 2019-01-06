@@ -77,9 +77,9 @@
 			<table id="cartcontent" fitColumns="true">
 				<thead>
 					<tr>
-						<th field="name" width=140><span class="table_text" >Name</span></th>
-						<th field="quantity" width=60 ><span class="table_text" >Quantity</span></th>
-						<th field="price" width=60 align="right"><span class="table_text" >Price</span></th>
+						<th field="name" width=140>Name</th>
+						<th field="quantity" width=60 >Quantity</th>
+						<th field="price" width=60 align="right">Price</th>
 					</tr>
 				</thead>
 			</table>
@@ -87,6 +87,8 @@
 			<br>
 			<hr>
 			<span class="shopping_cart_cost">£0.00</span>
+			<div class="reset_button_table"><a class="reset_button"><div class="button_margin"></div>Reset</a></div>
+			<div class="buy_button_table"><a class="buy_button"><div class="button_margin"></div>Buy Now</a></div>
 		</div>
 		<div class="basket_icon"></div>
 
@@ -126,7 +128,7 @@
 						<span class="meta__brand">Men's Originals</span>
 						<span class="meta__price">£99</span>
 					</div>
-					<button class="action action--button action--buy" data="25"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+					<button class="action action--button action--buy" name_data="Sobakov Shoes - Men's Originals" price_data="99"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 				</div>
 				<div class="grid__item sobakov">
 					<div class="slider">
@@ -139,7 +141,7 @@
 						<span class="meta__brand">Men's Originals</span>
 						<span class="meta__price">£99</span>
 					</div>
-					<button class="action action--button action--buy" data="30"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+					<button class="action action--button action--buy" name_data="Sobakov Shoes - Men's Originals" price_data="99"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 				</div>
 				<div class="grid__item sobakov">
 					<div class="slider">
@@ -152,7 +154,7 @@
 						<span class="meta__brand">Men's Originals</span>
 						<span class="meta__price">£99</span>
 					</div>
-					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+					<button class="action action--button action--buy" name_data="Sobakov Shoes - Men's Originals" price_data="99"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 				</div>
 				<div class="grid__item grid__item--size-a sobakov">
 					<div class="slider">
@@ -165,7 +167,7 @@
 						<span class="meta__brand">Adidas Soccer Heritage</span>
 						<span class="meta__price">£129</span>
 					</div>
-					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+					<button class="action action--button action--buy" name_data="Sobakov Soccer-inspired Shoes - Adidas Soccer Heritage" price_data="129"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 				</div>
 				<div class="grid__item sobakov">
 					<div class="slider">
@@ -178,7 +180,7 @@
 						<span class="meta__brand">Originals</span>
 						<span class="meta__price">£104.99</span>
 					</div>
-					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+					<button class="action action--button action--buy" name_data="Sobakov Shoes - Originals" price_data="104.99"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 				</div>
 				<div class="grid__item grid__item--size-a sobakov">
 					<div class="slider">
@@ -189,9 +191,9 @@
 					<div class="meta">
 						<h3 class="meta__title">Sobakov Shoes (Customisable)</h3>
 						<span class="meta__brand">Originals</span>
-						<span class="meta__price"> ̶£̶1̶0̶9̶ £89.99</span>
+						<span class="meta__price"><span class="offer">£109</span> £89.99</span>
 					</div>
-					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+					<button class="action action--button action--buy" name_data="Sobakov Shoes - Originals" price_data="89.99"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 				</div>
 				<div class="grid__item sobakov">
 					<div class="slider">
@@ -204,7 +206,7 @@
 						<span class="meta__brand">Men's Originals</span>
 						<span class="meta__price">£89.99</span>
 					</div>
-					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+					<button class="action action--button action--buy" name_data="Sobakov Shoes - Men's Originals" price_data="89.99"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 				</div>
 				<div class="grid__item sobakov">
 					<div class="slider">
@@ -217,7 +219,7 @@
 						<span class="meta__brand">Adidas Soccer Heritage</span>
 						<span class="meta__price">£109</span>
 					</div>
-					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+					<button class="action action--button action--buy" name_data="Sobakov Soccer-inspired Shoes - Adidas Soccer Heritage" price_data="109"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 				</div>
 				<div class="grid__item sobakov">
 					<div class="slider">
@@ -230,7 +232,7 @@
 						<span class="meta__brand">Adidas Soccer Heritage</span>
 						<span class="meta__price">£139</span>
 					</div>
-					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+					<button class="action action--button action--buy" name_data="Sobakov Soccer-inspired Shoes - Adidas Soccer Heritage" price_data="139"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 				</div>
 				<div class="grid__item sobakov">
 					<div class="slider">
@@ -243,7 +245,7 @@
 						<span class="meta__brand">Men's Originals</span>
 						<span class="meta__price">£99</span>
 					</div>
-					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+					<button class="action action--button action--buy" name_data="Sobakov Shoes - Men's Originals" price_data="99"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 				</div>
 				<div class="grid__item sobakov">
 					<div class="slider">
@@ -254,9 +256,9 @@
 					<div class="meta">
 						<h3 class="meta__title">Sobakov Shoes</h3>
 						<span class="meta__brand">Men's Originals</span>
-						<span class="meta__price">  ̶£̶1̶0̶9̶ £79</span>
+						<span class="meta__price"><span class="offer">£109</span> £79</span>
 					</div>
-					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+					<button class="action action--button action--buy" name_data="Sobakov Shoes - Originals" price_data="79"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 				</div>
 				<div class="grid__item answeerun">
 					<div class="slider">
@@ -267,9 +269,9 @@
 					<div class="meta">
 						<h3 class="meta__title">Asweerun Shoes</h3>
 						<span class="meta__brand">Men's Running</span>
-						<span class="meta__price"> ̶£̶7̶9̶ £50</span>
+						<span class="meta__price"><span class="offer">£79</span> £50</span>
 					</div>
-					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+					<button class="action action--button action--buy" name_data="Asweerun Shoes - Men's Running" price_data="50"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 				</div>
 				<div class="grid__item solarboost">
 					<div class="slider">
@@ -282,7 +284,7 @@
 						<span class="meta__brand">Men's Running</span>
 						<span class="meta__price">£159</span>
 					</div>
-					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+					<button class="action action--button action--buy" name_data="Solarboost Shoes - Men's Running" price_data="159"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 				</div>
 				<div class="grid__item answeerun">
 					<div class="slider">
@@ -295,7 +297,7 @@
 						<span class="meta__brand">Men's Running</span>
 						<span class="meta__price">£50</span>
 					</div>
-					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+					<button class="action action--button action--buy" name_data="Asweerun Shoes - Men's Running" price_data="50"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 				</div>
 				<div class="grid__item grid__item--size-a speedfactory">
 					<div class="slider">
@@ -309,7 +311,7 @@
 						<span class="meta__brand">Men's Running</span>
 						<span class="meta__price">£200</span>
 					</div>
-					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+					<button class="action action--button action--buy" name_data="SPEEDFACTORY AM4 Kwasi Kessie Shoes - Men's Running" price_data="200"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 				</div>
 				<div class="grid__item answeerun">
 					<div class="slider">
@@ -322,7 +324,7 @@
 						<span class="meta__brand">Men's Running</span>
 						<span class="meta__price">£70</span>
 					</div>
-					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+					<button class="action action--button action--buy" name_data="Asweerun Shoes - Men's Running" price_data="709"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 				</div>
 				<div class="grid__item ultraboost">
 					<div class="slider">
@@ -335,7 +337,7 @@
 						<span class="meta__brand">Men's Running</span>
 						<span class="meta__price">£170</span>
 					</div>
-					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+					<button class="action action--button action--buy" name_data="Ultraboost Shoes - Men's Running" price_data="170"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 				</div>
 				<div class="grid__item ultraboost">
 					<div class="slider">
@@ -346,9 +348,9 @@
 					<div class="meta">
 						<h3 class="meta__title">Ultraboost Shoes</h3>
 						<span class="meta__brand">Men's Running</span>
-						<span class="meta__price"> ̶£̶1̶7̶0̶ £160</span>
+						<span class="meta__price"><span class="offer">£170<span> £160</span>
 					</div>
-					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+					<button class="action action--button action--buy" name_data="Ultraboost Shoes - Men's Running" price_data="160"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 				</div>
 				<div class="grid__item ultraboost">
 					<div class="slider">
@@ -362,7 +364,7 @@
 						<span class="meta__brand">Men's Running</span>
 						<span class="meta__price">£199</span>
 					</div>
-					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+					<button class="action action--button action--buy" name_data="Ultraboost Shoes - Men's Running" price_data="199"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 				</div>
 				<div class="grid__item ultraboost">
 					<div class="slider">
@@ -375,7 +377,7 @@
 						<span class="meta__brand">Men's Running</span>
 						<span class="meta__price">£159</span>
 					</div>
-					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+					<button class="action action--button action--buy" name_data="Ultraboost Shoes - Men's Running" price_data="159"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 				</div>
 				<div class="grid__item solarboost">
 					<div class="slider">
@@ -388,7 +390,7 @@
 						<span class="meta__brand">Men's Running</span>
 						<span class="meta__price">£169</span>
 					</div>
-					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+					<button class="action action--button action--buy" name_data="Solarboost Shoes - Men's Running" price_data="169"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 				</div>
 				<div class="grid__item ultraboost">
 					<div class="slider">
@@ -401,7 +403,7 @@
 						<span class="meta__brand">Men's Running</span>
 						<span class="meta__price">£210</span>
 					</div>
-					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+					<button class="action action--button action--buy" name_data="Ultraboost Uncaged Shoes - Men's Running" price_data="210"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 				</div>
 				<div class="grid__item grid__item--size-a ultraboost">
 					<div class="slider">
@@ -416,7 +418,7 @@
 						<span class="meta__brand">Men's Running</span>
 						<span class="meta__price">£199</span>
 					</div>
-					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+					<button class="action action--button action--buy" name_data="Ultraboost Shoes - Men's Running" price_data="199"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 				</div>
 				<div class="grid__item ultraboost">
 					<div class="slider">
@@ -429,7 +431,7 @@
 						<span class="meta__brand">Men's Running</span>
 						<span class="meta__price">£200</span>
 					</div>
-					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+					<button class="action action--button action--buy" name_data="Ultraboost LTD Shoes - Men's Running" price_data="200"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 				</div>
 				<div class="grid__item ultraboost">
 					<div class="slider">
@@ -444,7 +446,7 @@
 						<span class="meta__brand">Men's Running</span>
 						<span class="meta__price">£240</span>
 					</div>
-					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+					<button class="action action--button action--buy" name_data="Ultraboost All Terrain Shoes - Men's Running" price_data="240"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 				</div>
 				<div class="grid__item ultraboost">
 					<div class="slider">
@@ -457,7 +459,7 @@
 						<span class="meta__brand">Men's Running</span>
 						<span class="meta__price">£179.99</span>
 					</div>
-					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+					<button class="action action--button action--buy" name_data="Ultraboost Uncaged Shoes - Men's Running" price_data="179.99"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 				</div>
 				<div class="grid__item ultraboost">
 					<div class="slider">
@@ -471,7 +473,7 @@
 						<span class="meta__brand">Men's Running</span>
 						<span class="meta__price">£220</span>
 					</div>
-					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+					<button class="action action--button action--buy" name_data="Ultraboost All Terrain Shoes - Men's Running" price_data="220"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 				</div>
 			</section>
 		</div>

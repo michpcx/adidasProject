@@ -11,6 +11,9 @@
 	font-size:1.5rem;
 	text-decoration: none;
 	}
+.navigation_bar	a:hover {
+		color: #5C5EDC;
+	}
 .navigation_bar h1 a{
 	color: white;
 	font-size: 2rem;
