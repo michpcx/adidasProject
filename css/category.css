@@ -132,7 +132,10 @@ hr{
 	cursor: pointer;
 	transition: all 0.2s;
 }
-
+#sport_video{
+	width: 100%;
+	margin-top: 55px;
+}
 
 
 
@@ -162,12 +165,14 @@ hr{
 		background-color: white;
 		border: 1px solid grey;
 		cursor: pointer;
+		transition: all 0.0s;
 	}
 	.cart_reset_button:hover, .cart_reset_button:active {
 		color: black;
 		background-color: white;
 		border: 1px solid grey;
 		cursor: pointer;
+		transition: all 0.0s;
 	}
 }
 @media screen and (min-width: 640px) and (max-width: 999px){
