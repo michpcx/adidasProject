@@ -202,9 +202,6 @@ footer .flag{
 	font-family: Trebuchet MS, Arial, Helvetica;
 	font-size: 0.8rem;
 }
-.minus_margin{
-	margin-top: -40px;
-}
 .footer_margin{
 	margin-top: 0px;
 }
@@ -218,7 +215,17 @@ footer .flag{
 	top:0%;
 	margin-top: 0%;
 }
-
+.minus_margin{
+	margin-top: 0px;
+}
+.margin_top{
+	height:20px;
+}
+@-moz-document url-prefix() {
+	.margin_top{
+		height:15px;
+	}
+}
 
 
 
