@@ -180,13 +180,16 @@ footer .flag{
 	margin-top: 0px;
 }
 .first_section{
-			margin-top: 40px;
-		}
-@-moz-document url-prefix() {
-.minus_margin{
-			margin-top: -40px;
+			margin-top: 20px;
 }
-.first_section{
+@-moz-document url-prefix() {
+		.first_section{
+			margin-top: 0px;
+		}
+		.minus_margin{
+					margin-top: -40px;
+		}
+		.first_section{
 			margin-top: 0px;
 		}
 }
