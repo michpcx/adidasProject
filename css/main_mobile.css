@@ -186,7 +186,7 @@ footer .flag{
 	margin-top: 0px;
 }
 .margin_top{
-	height:20px;
+	height:15px;
 }
 @-moz-document url-prefix() {
 	.margin_top{
