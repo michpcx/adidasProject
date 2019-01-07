@@ -1,0 +1,503 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title>Women - adidas - Impossible is Nothing.</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" media="screen and (min-width: 1000px)" href="css/main.css" />
+		<link rel="stylesheet" media="screen and (min-width: 1000px)" href="css/navbar.css" />
+		<link rel="stylesheet" media="screen and (min-width: 1000px)" href="css/buttons.css" />
+		<link rel='stylesheet' media='screen and (max-width: 999px)' href='css/main_mobile.css' />
+		<link rel="stylesheet" media="screen and (max-width: 999px)" href="css/buttons_mobile.css" />
+		<link rel="stylesheet" media="screen and (max-width: 999px)" href="css/navbar_mobile.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/grid/flickity.css" />
+		<link rel="stylesheet" type="text/css" href="css/grid/component.css" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<script type="text/javascript" src="https://www.jeasyui.com/easyui/jquery.easyui.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+		<link rel="stylesheet" href="css/category.css" />
+		<script src="js/main.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+		<script src="js/cart.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<nav class="navigation_bar" onclick="animateMenu(this)">
+				<a class="menu_icon">
+					<div class="menu_container">
+		 				<div class="bar1"></div>
+		 				<div class="bar2"></div>
+		 				<div class="bar3"></div>
+					</div>
+				</a>
+				<div class="mobile_menu">
+					<a href="men.html" class="item_menu">Men</a>
+					<a href="women.html" class="item_menu">Women</a>
+					<a href="#" class="item_menu">Kids</a>
+					<hr>
+					<a href="#" class="item_menu">Sport</a>
+					<a href="#" class="item_menu">Collections</a>
+					<a href="customiser.html" class="item_menu">Customiser</a>
+					<hr>
+					<a href="#" class="item_menu">UK</a>
+					<img src="assets/uk.png" height="20px" class="flag"/>
+					<span>&copy; 2018 ADIDAS Inc.</span>
+				</div>
+				<div class="navigation_block mobHide">
+					<ul>
+						<li><a href="men.html">Men</a></li>
+						<li><a href="women.html">Women</a></li>
+						<li><a>Kids</a></li>
+					</ul>
+				</div>
+				<div class="navigation_block">
+					<h1><a href="index.html" >adidas</a></h1>
+				</div>
+				<div class="navigation_block mobHide">
+					<ul>
+						<li><a>Sport</a></li>
+						<li><a>Collections</a></li>
+						<li><a href="customiser.html">Customiser</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<div class="overlay"><a class="close">✖</a>Success!<div class="second_line"> <br>You successfully brought <span class="cart_items_count">0</span> item(s) for <span class="shopping_cart_cost">£0.00</span></div></div>
+		<div class="overlay2"><a class="close2">✖</a>Warning!<div class="second_line"> <br>You haven't selected any shoes to purchase!</div></div>
+
+		<section>
+			<div>
+				<img class="main_img" src="assets/women_main.jpg" alt="Woman running" />
+			</div>
+		</section>
+
+		<div class="shopping_cart">
+			<span class="shopping_cart_total">Basket</span>
+			<table id="cartcontent" fitColumns="true">
+				<thead>
+					<tr>
+						<th field="name" width=140>Name</th>
+						<th field="quantity" width=60>Quantity</th>
+						<th field="price" width=60 align="right">Price (£)</th>
+					</tr>
+				</thead>
+			</table>
+			<br>
+			<br>
+			<hr>
+			<span class="shopping_cart_cost">£0.00</span>
+			<div class="reset_button_div"><a class="cart_reset_button"><div class="button_margin"></div>Reset</a></div>
+			<div class="buy_button_div"><a class="cart_buy_button"><div class="button_margin"></div>Buy Now</a></div>
+		</div>
+		<div class="basket_icon"></div>
+
+
+		<section>
+			<div class="bar">
+				<div class="filter">
+					<span class="filter__label">Filter: </span>
+					<button class="action filter__item filter__item--selected" data-filter="*">All</button>
+					<button class="action filter__item" data-filter=".sobakov"><i class="ico fas fa-shoe-prints"></i><span class="action__text">Sobakov</span></button>
+					<button class="action filter__item" data-filter=".answeerun"><i class="ico fas fa-running"></i><span class="action__text">Answeerun</span></button>
+					<button class="action filter__item" data-filter=".falcon"><i class="ico fas fa-solar-panel"></i><span class="action__text">Falcon</span></button>
+					<button class="action filter__item" data-filter=".nmd_r1"><i class="ico fas fa-industry"></i><span class="action__text">NMD_R1</span></button>
+					<button class="action filter__item" data-filter=".ultraboost"><i class="ico fas fa-fighter-jet"></i><span class="action__text">Ultraboost</span></button>
+				</div>
+				<button class="cart">
+					<i class="cart__icon fa fa-shopping-cart"></i>
+					<span class="text-hidden">Shopping cart</span>
+					<span class="cart__count">0</span>
+				</button>
+			</div>
+		</section>
+
+
+		<div class="view">
+			<section class="grid grid--loading">
+				<img class="grid__loader" src="assets/grid.svg" width="60" alt="Loader image" />
+				<div class="grid__sizer"></div>
+				<div class="grid__item grid__item--size-a ultraboost">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/ultraboost/ultraboost11_1.jpg" alt="Ultraboost 1" /></div>
+						<div class="slider__item"><img src="assets/products/ultraboost/ultraboost11_2.jpg" alt="Ultraboost 1" /></div>
+						<div class="slider__item"><img src="assets/products/ultraboost/ultraboost11_3.jpg" alt="Ultraboost 1" /></div>
+						<div class="slider__item">Get that best-ever feeling on every run. These neutral shoes have a stretchy knit upper with ventilation in key sweat zones to help you stay cool. Energy-returning cushioning and a flexible outsole work together to give you a smooth ride from touch-down to toe-off. </div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Ultraboost Shoes</h3>
+						<span class="meta__brand">Women's Running</span>
+						<span class="meta__price">£180</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Ultraboost Shoes - Women's Running" price_data="180"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item ultraboost">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/ultraboost/ultraboost2_1.jpg" alt="Ultraboost 2" /></div>
+						<div class="slider__item"><img src="assets/products/ultraboost/ultraboost2_2.jpg" alt="Ultraboost 2" /></div>
+						<div class="slider__item">Built for performance and comfort, these neutral running shoes give you the feeling of your best-ever run every time you lace them up. They have a lightweight knit upper that adapts to the changing shape of your foot as you run.</div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Ultraboost Shoes</h3>
+						<span class="meta__brand">Women's Running</span>
+						<span class="meta__price">£160</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Ultraboost Shoes - Women's Running" price_data="160"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item sobakov">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/sobakov/sobakov3_1.jpg" alt="Sobakov 3" /></div>
+						<div class="slider__item"><img src="assets/products/sobakov/sobakov3_2.jpg" alt="Sobakov 3" /></div>
+						<div class="slider__item">The Sobakov honors the spirit of modern soccer culture. Built with a stretchy knit upper, these shoes have a fierce look with reflective swerving 3-Stripes and a bold sculpted rubber outsole.</div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Sobakov Shoes</h3>
+						<span class="meta__brand">Women's Originals</span>
+						<span class="meta__price">£99</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Sobakov Shoes - Women's Originals" price_data="99"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item ultraboost">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/ultraboost/ultraboost_1.jpg" alt="Ultraboost 4" /></div>
+						<div class="slider__item"><img src="assets/products/ultraboost/ultraboost_2.jpg" alt="Ultraboost 4" /></div>
+						<div class="slider__item">Find your best run in these neutral shoes. Built to go the distance on city streets, they have a soft, stretchy knit upper that adapts to the changing shape of your foot as you run for lightweight support. </div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Ultraboost Shoes</h3>
+						<span class="meta__brand">Women's Running</span>
+						<span class="meta__price">£170</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Sobakov Soccer-inspired Shoes - Adidas Soccer Heritage" price_data="170"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item sobakov">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/sobakov/sobakov5_1.jpg" alt="Sobakov 5" /></div>
+						<div class="slider__item"><img src="assets/products/sobakov/sobakov5_2.jpg" alt="Sobakov 5" /></div>
+						<div class="slider__item">Archive-style 3-Stripes recall the iconic details of the '00 Predator Precision. A sculpted outsole with a wavy herringbone pattern is a defining feature of the Sobakov design.</div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Sobakov Shoes</h3>
+						<span class="meta__brand">Originals</span>
+						<span class="meta__price">£104.99</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Sobakov Shoes - Originals" price_data="104.99"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item sobakov">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/sobakov/sobakov8_1.jpg" alt="Sobakov 6" /></div>
+						<div class="slider__item"><img src="assets/products/sobakov/sobakov8_2.jpg" alt="Sobakov 6" /></div>
+						<div class="slider__item">These suede shoes show off asymmetrical lacing and a big sculpted rubber midsole. In a nod to adidas soccer heritage, the 3-Stripes mirror details from the legendary '00 Predator Precision. </div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Sobakov Soccer-inspired Shoes</h3>
+						<span class="meta__brand">Adidas Soccer Heritage</span>
+						<span class="meta__price">£109</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Sobakov Soccer-inspired Shoes - Adidas Soccer Heritage" price_data="109"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item sobakov">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/sobakov/sobakov10_1.jpg" alt="Sobakov 7" /></div>
+						<div class="slider__item"><img src="assets/products/sobakov/sobakov10_1.jpg" alt="Sobakov 7" /></div>
+						<div class="slider__item">The Sobakov honors the spirit of modern soccer culture. Built with a stretchy knit upper, these shoes have a fierce look with reflective swerving 3-Stripes and a bold sculpted rubber outsole.</div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Sobakov Shoes</h3>
+						<span class="meta__brand">Originals</span>
+						<span class="meta__price">£99</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Sobakov Shoes - Originals" price_data="99"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item sobakov">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/sobakov/sobakov9_1.jpg" alt="Sobakov 8" /></div>
+						<div class="slider__item"><img src="assets/products/sobakov/sobakov9_2.jpg" alt="Sobakov 8" /></div>
+						<div class="slider__item">With asymmetrical lacing and dynamic, stitched-on 3-Stripes, these shoes pay homage to the soccer shoes that defined the 2000s. A knit upper feels light on your feet, and the outsole shows off a sculpted herringbone pattern.</div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Sobakov Soccer-inspired Shoes</h3>
+						<span class="meta__brand">Adidas Soccer Heritage</span>
+						<span class="meta__price">£139</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Sobakov Soccer-inspired Shoes - Adidas Soccer Heritage" price_data="139"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item grid__item--size-a sobakov">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/sobakov/sobakov12_1.jpg" alt="Sobakov 9" /></div>
+						<div class="slider__item"><img src="assets/products/sobakov/sobakov12_2.jpg" alt="Sobakov 9" /></div>
+						<div class="slider__item"><img src="assets/products/sobakov/sobakov12_3.jpg" alt="Sobakov 9" /></div>
+						<div class="slider__item">The Sobakov honors the spirit of modern soccer culture. Built with a stretchy knit upper, these shoes have a fierce look with reflective swerving 3-Stripes and a bold sculpted rubber outsole. <br><br><br><a href="customiser.html" >Customise</a></div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Sobakov Shoes (Customisable)</h3>
+						<span class="meta__brand">Originals</span>
+						<span class="meta__price">£89.99</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Sobakov Shoes - Originals" price_data="89.99"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item nmd_r1">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/NMD_R1/NMD_R1_1.jpg" alt="NMD_R1 10" /></div>
+						<div class="slider__item"><img src="assets/products/NMD_R1/NMD_R1_1.jpg" alt="NMD_R1 10" /></div>
+						<div class="slider__item">Taking style cues from premium technical outerwear, these shoes blend '80s heritage with modern comfort. The stretchy knit upper is accented with reflective details. </div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">NMD_R1 Shoes</h3>
+						<span class="meta__brand">Women's Originals</span>
+						<span class="meta__price">£130</span>
+					</div>
+					<button class="action action--button action--buy" name_data="NMD_R1 Shoes - Women's Originals" price_data="130"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item sobakov">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/sobakov/sobakov11_1.jpg" alt="Sobakov 11" /></div>
+						<div class="slider__item"><img src="assets/products/sobakov/sobakov11_2.jpg" alt="Sobakov 11" /></div>
+						<div class="slider__item">Archive-style 3-Stripes recall the iconic details of the '00 Predator Precision. A sculpted outsole with a wavy herringbone pattern is a defining feature of the Sobakov design.</div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Sobakov Shoes</h3>
+						<span class="meta__brand">Originals</span>
+						<span class="meta__price">£79</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Sobakov Shoes - Originals" price_data="79"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item answeerun">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/asweerun/asweerun_1.jpg" alt="Asweerun 12" /></div>
+						<div class="slider__item"><img src="assets/products/asweerun/asweerun_2.jpg" alt="Asweerun 12" /></div>
+						<div class="slider__item">Aspire to greatness. These running shoes are made with an airy, lightweight mesh upper. The durable rubber outsole grips the pavement for added stability. A cushioned midsole brings comfort to each step.</div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Asweerun Shoes</h3>
+						<span class="meta__brand">Running</span>
+						<span class="meta__price">£50</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Asweerun Shoes - Running" price_data="50"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item grid__item--size-a falcon">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/falcon/falcon_1.jpg" alt="Falcon 13" /></div>
+						<div class="slider__item"><img src="assets/products/falcon/falcon_2.jpg" alt="Falcon 13" /></div>
+						<div class="slider__item"><img src="assets/products/falcon/falcon_3.jpg" alt="Falcon 13" /></div>
+						<div class="slider__item"><img src="assets/products/falcon/falcon_4.jpg" alt="Falcon 13" /></div>
+						<div class="slider__item">The Falcon captures the carefree, rebellious spirit of the 1990s with a chunky shape and vibrant colors. This special edition celebrates style trends from the '90s rave scene. These mesh shoes are adorned with metallic faux leather overlays. They offer a supportive, cushioned feel for day-into-night wearability. <ul><li>Cued by daring '90s fashion<li>Built for all-day comfort</li><li>Stability</li><li>Mesh upper; Metallic synthetic leather overlays</li></ul></div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Falcon Shoes</h3>
+						<span class="meta__brand">Women's Originals</span>
+						<span class="meta__price">£100</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Falcon Shoes - Women's Originals" price_data="100"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item falcon">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/falcon/falcon2_1.jpg" alt="Falcon 14" /></div>
+						<div class="slider__item"><img src="assets/products/falcon/falcon2_2.jpg" alt="Falcon 14" /></div>
+						<div class="slider__item">The Falcon flaunts a carefree rebellious look inspired by retro style trends. These chunky shoes show off a distinctly '90s look with loud high-contrast colors and metallic finishes.</div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Falcon Shoes</h3>
+						<span class="meta__brand">Women's Originals</span>
+						<span class="meta__price">£170</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Falcon Shoes - Women's Originals" price_data="170"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item ultraboost">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/ultraboost/ultraboost12_1.jpg" alt="Ultraboost 15" /></div>
+						<div class="slider__item"><img src="assets/products/ultraboost/ultraboost12_2.jpg" alt="Ultraboost 15" /></div>
+						<div class="slider__item">These running shoes combine comfort and high-performance technology for a best-ever-run feeling. They have a stretchy knit upper that adapts to the changing shape of your foot as you run.  </div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Ultraboost Shoes</h3>
+						<span class="meta__brand">Women's Running</span>
+						<span class="meta__price">£180</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Ultraboost Shoes - Women's Running" price_data="180"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item answeerun">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/asweerun/asweerun3_1.jpg" alt="Asweerun 16" /></div>
+						<div class="slider__item"><img src="assets/products/asweerun/asweerun3_2.jpg" alt="Asweerun 16" /></div>
+						<div class="slider__item">Shoes with flexibility and responsiveness for multisport training. These shoes have a knit textile upper that hugs the foot for a sock-like fit. Pillow-like midsole cushioning provides long-lasting comfort.</div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Asweerun Shoes</h3>
+						<span class="meta__brand">Women's Running</span>
+						<span class="meta__price">£70</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Asweerun Shoes - Women's Running" price_data="70"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item nmd_r1">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/NMD_R1/NMD_R13_1.jpg" alt="NMD_R1 17" /></div>
+						<div class="slider__item"><img src="assets/products/NMD_R1/NMD_R13_2.jpg" alt="NMD_R1 17" /></div>
+						<div class="slider__item"><img src="assets/products/NMD_R1/NMD_R13_3.jpg" alt="NMD_R1 17" /></div>
+						<div class="slider__item">Tech-focused adidas running designs from the '80s spark the futuristic look of these NMD shoes. Updated with today's innovative technologies, they have a foot-hugging knit upper and the springy responsive feel of a Boost midsole. </div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">NMD_R1 Shoes</h3>
+						<span class="meta__brand">Women's Originals</span>
+						<span class="meta__price">£130</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Ultraboost Shoes - Women's Running" price_data="170"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item nmd_r1">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/NMD_R1/NMD_R12_1.jpg" alt="NMD_R1 18" /></div>
+						<div class="slider__item"><img src="assets/products/NMD_R1/NMD_R12_2.jpg" alt="NMD_R1 18" /></div>
+						<div class="slider__item"><img src="assets/products/NMD_R1/NMD_R12_3.jpg" alt="NMD_R1 18" /></div>
+						<div class="slider__item">These lightweight shoes fuse '70s style with modern technology. Flashing vintage colors, the mesh upper is accented with synthetic suede overlays and serrated 3-Stripes. </div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">NMD_R1 Shoes</h3>
+						<span class="meta__brand">Women's Originals</span>
+						<span class="meta__price">£130</span>
+					</div>
+					<button class="action action--button action--buy" name_data="NMD_R1 Shoes - Women's Originals" price_data="130"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item ultraboost">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/ultraboost/ultraboost3_1.jpg" alt="Ultraboost 19" /></div>
+						<div class="slider__item"><img src="assets/products/ultraboost/ultraboost3_2.jpg" alt="Ultraboost 19" /></div>
+						<div class="slider__item"><img src="assets/products/ultraboost/ultraboost3_3.jpg" alt="Ultraboost 19" /></div>
+						<div class="slider__item">Find your best run in these neutral shoes. Built to go the distance on city streets, they have a soft, stretchy knit upper that adapts to the changing shape of your foot as you run for lightweight support. </div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Ultraboost Shoes</h3>
+						<span class="meta__brand">Women's Running</span>
+						<span class="meta__price">£199</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Ultraboost Shoes - Women's Running" price_data="199"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item ultraboost">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/ultraboost/ultraboost4_1.jpg" alt="Ultraboost 20" /></div>
+						<div class="slider__item"><img src="assets/products/ultraboost/ultraboost4_2.jpg" alt="Ultraboost 20" /></div>
+						<div class="slider__item">These shoes have a stretchy knit upper that adapts to the changing shape of your foot as you run. Responsive midsole cushioning and a flexible outsole deliver a smooth and energized ride.</div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Ultraboost Shoes</h3>
+						<span class="meta__brand">Women's Running</span>
+						<span class="meta__price">£159</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Ultraboost Shoes - Women's Running" price_data="159"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item falcon">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/falcon/falcon3_1.jpg" alt="Falcon 21" /></div>
+						<div class="slider__item"><img src="assets/products/falcon/falcon3_2.jpg" alt="Falcon 21" /></div>
+						<div class="slider__item"><img src="assets/products/falcon/falcon3_3.jpg" alt="Falcon 21" /></div>
+						<div class="slider__item">The Falcon captures the carefree, rebellious spirit of the 1990s with a chunky shape and vibrant colors. These shoes celebrate style trends popularized by '90s electronic dance music. The mesh upper is adorned with metallic faux leather overlays.</div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Falcon Shoes</h3>
+						<span class="meta__brand">Women' Running</span>
+						<span class="meta__price">£199</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Falcon Shoes - Women' Running" price_data="199"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item nmd_r1">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/NMD_R1/NMD_R14_1.jpg" alt="NMD_R1 22" /></div>
+						<div class="slider__item"><img src="assets/products/NMD_R1/NMD_R14_2.jpg" alt="NMD_R1 22" /></div>
+						<div class="slider__item">Style revisited, interrupted, recontextualized. These adidas Originals by Alexander Wang shoes blend design cues from the adidas archives with modern and unexpected elements. They feature a layered upper inspired by retro running pairs.</div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">NMD_R1 Shoes</h3>
+						<span class="meta__brand">Originals</span>
+						<span class="meta__price">£200</span>
+					</div>
+					<button class="action action--button action--buy" name_data="NMD_R1 Shoes - Originals" price_data="200"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item grid__item--size-a falcon">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/falcon/falcon4_1.jpg" alt="Falcon 23" /></div>
+						<div class="slider__item"><img src="assets/products/falcon/falcon4_2.jpg" alt="Falcon 23" /></div>
+						<div class="slider__item"><img src="assets/products/falcon/falcon4_3.jpg" alt="Falcon 23" /></div>
+						<div class="slider__item">Leave the scissors in the drawer. Inspired by runners who cut off the cages of their shoes, adidas created a simplified design that gives you a feeling of free and unrestricted movement. The neutral shoes have an internally reinforced knit upper for a supportive fit.</div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Falcon Shoes</h3>
+						<span class="meta__brand">Women' Running</span>
+						<span class="meta__price">£179</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Falcon Shoes - Women' Running" price_data="179"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item nmd_r1">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/NMD_R1/NMD_R15_1.jpg" alt="NMD_R1 24" /></div>
+						<div class="slider__item"><img src="assets/products/NMD_R1/NMD_R15_2.jpg" alt="NMD_R1 24" /></div>
+						<div class="slider__item">Rooted in '80s archival design, these shoes have dynamic street style. The camouflage knit upper has transparent 3-Stripes on the side. EVA midsole plugs are a nod to the shoe's heritage, and energy-returning cushioning adds modern comfort.</div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">NMD_R1 Shoes</h3>
+						<span class="meta__brand">Women's Originals</span>
+						<span class="meta__price">£130</span>
+					</div>
+					<button class="action action--button action--buy" name_data="NMD_R1 Shoes - Women's Originals" price_data="130"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item ultraboost">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/ultraboost/ultraboost13_1.jpg" alt="Ultraboost 25" /></div>
+						<div class="slider__item"><img src="assets/products/ultraboost/ultraboost13_2.jpg" alt="Ultraboost 25" /></div>
+						<div class="slider__item">The neutral shoes have an internally reinforced knit upper for a supportive fit. The responsive midsole and flexible outsole deliver a smooth and comfortable ride. </div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Ultraboost Uncaged Shoes</h3>
+						<span class="meta__brand">Women's Running</span>
+						<span class="meta__price">£180</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Ultraboost Uncaged Shoes - Women's Running" price_data="180"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item ultraboost">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/ultraboost/ultraboost9_1.jpg" alt="Ultraboost 26" /></div>
+						<div class="slider__item"><img src="assets/products/ultraboost/ultraboost9_2.jpg" alt="Ultraboost 26" /></div>
+						<div class="slider__item">Leave the scissors in the drawer. Inspired by runners who cut off the cages of their shoes, adidas created a simplified design that gives you a feeling of free and unrestricted movement. They have an internally reinforced knit upper for a supportive fit.</div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Ultraboost Uncaged Shoes</h3>
+						<span class="meta__brand">Women's Running</span>
+						<span class="meta__price">£179.99</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Ultraboost Uncaged Shoes - Women's Running" price_data="179.99"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item ultraboost">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/ultraboost/ultraboost14_1.jpg" alt="Ultraboost 27" /></div>
+						<div class="slider__item"><img src="assets/products/ultraboost/ultraboost14_2.jpg" alt="Ultraboost 27" /></div>
+						<div class="slider__item">These neutral running shoes were designed using motion capture technology to deliver an unrestricted feel. The laceless shoes have a stretchy knit upper that hugs the foot.</div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Ultraboost Laceless Shoes</h3>
+						<span class="meta__brand">Women's Running</span>
+						<span class="meta__price">£220</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Ultraboost Laceless Shoes - Women's Running" price_data="220"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+			</section>
+		</div>
+
+
+		<footer>
+			<div class="links">
+				<div class="footer_filler"></div>
+				<span>UK</span>
+				<img src="assets/uk.png" height="20px" class="flag"/>
+				<span>About Us</span>
+				<span><a href="customiser.html" >Customiser</a></span>
+				<span>&copy; 2018 ADIDAS Inc.</span>
+			</div>
+		</footer>
+
+
+		<script src="js/isotope.pkgd.min.js"></script>
+		<script src="js/flickity.pkgd.min.js"></script>
+		<script src="js/grid.js"></script>
+	</body>
+</html>
