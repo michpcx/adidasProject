@@ -36,10 +36,10 @@ header{
 	text-align:center;
 	font-family: 'adidas';
 }
-.extra_margin, .men_box, .pureboost_box1{
+.extra_margin, .men_box, .pureboost_box1, .product_box_1, .product_box{
 	margin-top: -40px;
 }
-.men_box, .women_box, .kids_box{
+.men_box, .women_box, .kids_box, .product_box_1, .product_box{
 	position:relative;
 }
 .first_selection, .sobakov_img, .pureboost_img, .sport_img{
@@ -172,6 +172,15 @@ footer .flag{
 .info_box_centre span{
 	font-family: Trebuchet MS, Arial, Helvetica;
 	font-size: 0.9rem;
+}
+.minus_margin{
+	margin-top: -40px;
+}
+.footer_margin{
+	margin-top: 0px;
+}
+.product_box{
+	margin-top: 0px;
 }
 
 
