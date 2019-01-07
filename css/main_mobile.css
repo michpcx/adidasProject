@@ -173,6 +173,9 @@ footer .flag{
 	font-family: Trebuchet MS, Arial, Helvetica;
 	font-size: 0.9rem;
 }
+.minus_margin{
+	margin-top: -40px;
+}
 .footer_margin{
 	margin-top: 0px;
 }
