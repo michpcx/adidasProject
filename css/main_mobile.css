@@ -179,12 +179,15 @@ footer .flag{
 .product_box{
 	margin-top: 0px;
 }
+.first_section{
+			margin-top: 40px;
+		}
 @-moz-document url-prefix() {
 .minus_margin{
 			margin-top: -40px;
 }
 .first_section{
-			margin-top: 40px;
+			margin-top: 0px;
 		}
 }
 
