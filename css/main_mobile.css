@@ -173,16 +173,20 @@ footer .flag{
 	font-family: Trebuchet MS, Arial, Helvetica;
 	font-size: 0.9rem;
 }
-.minus_margin{
-	margin-top: -40px;
-}
 .footer_margin{
 	margin-top: 0px;
 }
 .product_box{
 	margin-top: 0px;
 }
-
+@-moz-document url-prefix() {
+.minus_margin{
+			margin-top: -40px;
+}
+.first_section{
+			margin-top: 40px;
+		}
+}
 
 
 /*      ADIDAS LOGO    */
