@@ -113,7 +113,7 @@ header{
 	font-family: 'Karla', Arial, Helvetica;
 	border-radius: 3px;
 	display: none;
-	z-index: 10;
+	z-index: 20;
 }
 .overlay{
 	background-color: #83d191;
@@ -225,6 +225,11 @@ footer .flag{
 	.margin_top{
 		height:15px;
 	}
+}
+.bottom_navigation{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
 
 

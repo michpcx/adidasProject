@@ -5,6 +5,23 @@ var margin = 0;
 
 $(document).ready(function() {
 
+  'use strict';
+  $('#cartcontent').datagrid({
+    singleSelect:true
+  });
+
+  if(localStorage && localStorage.getItem('cart')){
+    var cart = localStorage.getItem('cart');
+    totalCost = parseInt(localStorage.getItem('totalCost'));
+    var totalItems = parseInt(localStorage.getItem('totalItems'), 10);
+    $(".shopping_cart_cost").text("£" + Math.round(totalCost * 100) / 100);
+    $(".cart_items_count").text(totalItems);
+    $(".cart__count").text(totalItems);
+    var items = JSON.parse(cart);
+    $('#cartcontent').datagrid('loadData', items);
+    data = items;
+    }
+
   // If button of the cart is pressed, cart will be showed
   $( ".cart" ).click(function(event) {
     if(shopping_cart_pressed == 0){
@@ -20,10 +37,7 @@ $(document).ready(function() {
   });
 
 
-  'use strict';
-  $('#cartcontent').datagrid({
-    singleSelect:true
-  });
+
 
 
   $( ".cart_buy_button" ).click(function(event) {
@@ -42,25 +56,19 @@ $(document).ready(function() {
   });
 
   $( ".cart_reset_button" ).click(function(event) {
-    $('#cartcontent').datagrid('deleteRow', 0);
-    //var rows = data.rows;  // get all selected rows
-    //for(var i=0; i<data.total; i++){
-    //  var index = $('#cartcontent').datagrid('getRowIndex',rows.id);  // get the row index
-    //  console.log(i);
-    //  console.log(index);
-    //  console.log(rows.id);
-    //  console.log(data.total);
-    //  $('#cartcontent').datagrid('deleteRow',index);
-    //}
-    margin -= 38;
-    $(".datagrid-view2").css("margin-top", -margin);
+    localStorage.clear();
+    location.reload();
   });
-
 
   $( ".action--buy" ).click(function(event, source) {
     var name = $(this).attr("name_data");
     var price = $(this).attr("price_data");
     addProduct(name, parseFloat(price));
+    var data_string = JSON.stringify(data);
+    localStorage.setItem("cart", data_string);
+    localStorage.setItem("totalCost", totalCost);
+		var cartItems = parseInt($('.cart__count').text(), 10);
+    localStorage.setItem("totalItems", cartItems+1);
   });
 
 });
@@ -87,13 +95,9 @@ function addProduct(name,price){
     });
   }
   add();
-  totalCost += price;
+  totalCost += parseInt(price, 10);
   //load data grid from jquery ui
   $('#cartcontent').datagrid('loadData', data);
-  margin += 38;
-  $(".datagrid-view2").css("margin-top", -margin);
   //update totals in the html
   $(".shopping_cart_cost").text("£" + Math.round(totalCost * 100) / 100);
-
-
 }
