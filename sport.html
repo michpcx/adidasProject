@@ -1,0 +1,346 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title>Sport - adidas - Impossible is Nothing.</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" media="screen and (min-width: 1000px)" href="css/main.css" />
+		<link rel="stylesheet" media="screen and (min-width: 1000px)" href="css/navbar.css" />
+		<link rel="stylesheet" media="screen and (min-width: 1000px)" href="css/buttons.css" />
+		<link rel='stylesheet' media='screen and (max-width: 999px)' href='css/main_mobile.css' />
+		<link rel="stylesheet" media="screen and (max-width: 999px)" href="css/buttons_mobile.css" />
+		<link rel="stylesheet" media="screen and (max-width: 999px)" href="css/navbar_mobile.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/grid/flickity.css" />
+		<link rel="stylesheet" type="text/css" href="css/grid/component.css" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<script type="text/javascript" src="https://www.jeasyui.com/easyui/jquery.easyui.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+		<link rel="stylesheet" href="css/category.css" />
+		<script src="js/main.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+		<script src="js/cart.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<nav class="navigation_bar" onclick="animateMenu(this)">
+				<a class="menu_icon">
+					<div class="menu_container">
+		 				<div class="bar1"></div>
+		 				<div class="bar2"></div>
+		 				<div class="bar3"></div>
+					</div>
+				</a>
+				<div class="mobile_menu">
+					<a href="men.html" class="item_menu">Men</a>
+					<a href="women.html" class="item_menu">Women</a>
+					<a href="kids.html" class="item_menu">Kids</a>
+					<hr>
+					<a href="sport.html" class="item_menu">Sport</a>
+					<a href="#" class="item_menu">Collections</a>
+					<a href="customiser.html" class="item_menu">Customiser</a>
+					<hr>
+					<a href="#" class="item_menu">UK</a>
+					<img src="assets/uk.png" height="20px" class="flag"/>
+					<span>&copy; 2018 ADIDAS Inc.</span>
+				</div>
+				<div class="navigation_block mobHide">
+					<ul>
+						<li><a href="men.html">Men</a></li>
+						<li><a href="women.html">Women</a></li>
+						<li><a href="kids.html">Kids</a></li>
+					</ul>
+				</div>
+				<div class="navigation_block">
+					<h1><a href="index.html" >adidas</a></h1>
+				</div>
+				<div class="navigation_block mobHide">
+					<ul>
+						<li><a href="sport.html">Sport</a></li>
+						<li><a>Collections</a></li>
+						<li><a href="customiser.html">Customiser</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<div class="overlay"><a class="close">✖</a>Success!<div class="second_line"> <br>You successfully brought <span class="cart_items_count">0</span> item(s) for <span class="shopping_cart_cost">£0.00</span></div></div>
+		<div class="overlay2"><a class="close2">✖</a>Warning!<div class="second_line"> <br>You haven't selected any shoes to purchase!</div></div>
+
+		<section>
+			<div>
+				<video id="sport_video" loop="" autoplay="" playsinline="" src="http://www.adidas.com/5280/campaigns/Bras_&amp;_Tights_SS19/MHChangedJAN/adidas_WMS_SS19_MH_BelieveThis_Large-Desktop.mp4"></video>
+			</div>
+		</section>
+
+		<div class="shopping_cart">
+			<span class="shopping_cart_total">Basket</span>
+			<table id="cartcontent" fitColumns="true">
+				<thead>
+					<tr>
+						<th field="name" width=140>Name</th>
+						<th field="quantity" width=60>Quantity</th>
+						<th field="price" width=60 align="right">Price (£)</th>
+					</tr>
+				</thead>
+			</table>
+			<br>
+			<br>
+			<hr>
+			<span class="shopping_cart_cost">£0.00</span>
+			<div class="reset_button_div"><a class="cart_reset_button"><div class="button_margin"></div>Reset</a></div>
+			<div class="buy_button_div"><a class="cart_buy_button"><div class="button_margin"></div>Buy Now</a></div>
+		</div>
+		<div class="basket_icon"></div>
+
+
+		<section>
+			<div class="bar">
+				<div class="filter">
+					<span class="filter__label">Filter: </span>
+					<button class="action filter__item filter__item--selected" data-filter="*">All</button>
+					<button class="action filter__item" data-filter=".men"><i class="ico fas fa-running"></i><span class="action__text">For men</span></button>
+					<button class="action filter__item" data-filter=".women"><i class="ico fas fa-solar-panel"></i><span class="action__text">For women</span></button>
+				</div>
+				<button class="cart">
+					<i class="cart__icon fa fa-shopping-cart"></i>
+					<span class="text-hidden">Shopping cart</span>
+					<span class="cart__count">0</span>
+				</button>
+			</div>
+		</section>
+
+
+		<div class="view">
+			<section class="grid grid--loading">
+				<img class="grid__loader" src="assets/grid.svg" width="60" alt="Loader image" />
+				<div class="grid__sizer"></div>
+				<div class="grid__item grid__item--size-a women">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/sport/sport_1.jpg" alt="Sport 1" /></div>
+						<div class="slider__item"><img src="assets/products/sport/sport_2.jpg" alt="Sport 1" /></div>
+						<div class="slider__item"><img src="assets/products/sport/sport_3.jpg" alt="Sport 1" /></div>
+						<div class="slider__item">This workout bra helps keep everything in place so you can focus on your workout. Made of stretchy jersey, the bra has a compression fit that offers medium support. </div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Don't Rest X Bra</h3>
+						<span class="meta__brand">Women's Training</span>
+						<span class="meta__price">£40</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Don't Rest X Bra - Women's Training" price_data="40"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item men">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/sport/sport3_1.jpg" alt="Sport 2" /></div>
+						<div class="slider__item"><img src="assets/products/sport/sport3_2.jpg" alt="Sport 2" /></div>
+						<div class="slider__item"><img src="assets/products/sport/sport3_3.jpg" alt="Sport 2" /></div>
+						<div class="slider__item">It's all about the base. Ideal for layering, this long sleeve t-shirt offers a snug compression fit that wraps your body and focuses your muscles for extreme acceleration.</div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Alphaskin Sport+ 3-Stripes Tee</h3>
+						<span class="meta__brand">Men's Training</span>
+						<span class="meta__price">£45</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Alphaskin Sport+ 3-Stripes Tee - Men's Training" price_data="45"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item men">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/sport/sport4_1.jpg" alt="Sport 3" /></div>
+						<div class="slider__item"><img src="assets/products/sport/sport4_2.jpg" alt="Sport 3" /></div>
+						<div class="slider__item"><img src="assets/products/sport/sport4_3.jpg" alt="Sport 3" /></div>
+						<div class="slider__item">Push through your shoulder presses in this long sleeve t-shirt. It wraps your body with a locked-in feel as the compression fit focuses your muscles for explosive acceleration.</div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Alphaskin Badge of Sport Tee</h3>
+						<span class="meta__brand">Men's Training</span>
+						<span class="meta__price">£35</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Alphaskin Badge of Sport Tee - Men's Training" price_data="35"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item grid__item--size-a women">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/sport/sport2_1.jpg" alt="Sport 4" /></div>
+						<div class="slider__item"><img src="assets/products/sport/sport2_2.jpg" alt="Sport 4" /></div>
+						<div class="slider__item"><img src="assets/products/sport/sport2_3.jpg" alt="Sport 4" /></div>
+						<div class="slider__item">Flow freely through your workout in this women's crop top, made in collaboration with Wanderlust. Smooth and seamless, it's made of stretchy fabric featuring climacool®. </div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Wanderflow Warp Knit Crop Top</h3>
+						<span class="meta__brand">Women's Training</span>
+						<span class="meta__price">£50</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Wanderflow Warp Knit Crop Top - Women's Training" price_data="50"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item women">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/sport/sport5_1.jpg" alt="Sport 5" /></div>
+						<div class="slider__item"><img src="assets/products/sport/sport5_2.jpg" alt="Sport 5" /></div>
+						<div class="slider__item"><img src="assets/products/sport/sport5_3.jpg" alt="Sport 5" /></div>
+						<div class="slider__item">This sports bra separates and supports for a locked-down fit. It has soft pads that adjust to your shape, plus a smooth elastic hem band that wicks away moisture from your skin. </div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Stronger For It Soft Bra</h3>
+						<span class="meta__brand">Women's Training</span>
+						<span class="meta__price">£55</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Stronger For It Soft Bra - Women's Training" price_data="55"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item women">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/sport/sport6_1.jpg" alt="Sport 6" /></div>
+						<div class="slider__item"><img src="assets/products/sport/sport6_2.jpg" alt="Sport 6" /></div>
+						<div class="slider__item">Find calm after the chaos. In the afterglow of victory, tune out and reset in this hoodie. The ultra-soft pullover is made of French terry for a comfortable feel. It's cut in a long length for extra coverage. </div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Must Haves Badge of Sport Hoodie</h3>
+						<span class="meta__brand">Women's Athletics</span>
+						<span class="meta__price">£60</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Must Haves Badge of Sport Hoodie - Women's Athletics" price_data="60"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item men">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/sport/sport7_1.jpg" alt="Sport 7" /></div>
+						<div class="slider__item"><img src="assets/products/sport/sport7_2.jpg" alt="Sport 7" /></div>
+						<div class="slider__item"> Transition from the gym to the street in sport-inspired style. This full-zip hoodie features a contrast 3-Stripes band around one sleeve.</div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Essentials Motion Pack Track Jacket</h3>
+						<span class="meta__brand">Men's Training</span>
+						<span class="meta__price">£75</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Essentials Motion Pack Track Jacket - Men's Training" price_data="75"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item men">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/sport/sport8_1.jpg" alt="Sport 8" /></div>
+						<div class="slider__item"><img src="assets/products/sport/sport8_2.jpg" alt="Sport 8" /></div>
+						<div class="slider__item"> Inspired by archival '90s running styles, these juniors' shoes bring modern comfort and flexibility to a vintage look. The soft knit upper hugs the foot for a snug, supportive fit.</div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Essentials 3-Stripes 3/4 Pants</h3>
+						<span class="meta__brand">Men's Training</span>
+						<span class="meta__price">£43</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Essentials 3-Stripes 3/4 Pants - Men's Training" price_data="43"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item grid__item--size-a men">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/sport/sport9_1.jpg" alt="Sport 9" /></div>
+						<div class="slider__item"><img src="assets/products/sport/sport9_2.jpg" alt="Sport 9" /></div>
+						<div class="slider__item"><img src="assets/products/sport/sport9_3.jpg" alt="Sport 9" /></div>
+						<div class="slider__item">Alphaskin is a performance layer built to give athletes a locked-in feel during training and competition. Built with outdoor workouts in mind, these short tights wrap your body in breathable, quick-drying fabric featuring UV protection. They deliver light compression for a supportive feel.</div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Alphaskin Sport Short Tights</h3>
+						<span class="meta__brand">Men's Training</span>
+						<span class="meta__price">£25</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Alphaskin Sport Short Tights - Men's Training" price_data="25"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item women">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/sport/sport10_1.jpg" alt="Sport 10" /></div>
+						<div class="slider__item"><img src="assets/products/sport/sport10_2.jpg" alt="Sport 10" /></div>
+						<div class="slider__item"><img src="assets/products/sport/sport10_3.jpg" alt="Sport 10" /></div>
+						<div class="slider__item">Taking style cues from premium technical outerwear, these shoes blend '80s heritage with modern comfort. The stretchy knit upper is accented with reflective details. </div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Believe This High Rise High-Rise 7/8 Tights</h3>
+						<span class="meta__brand">Women's Training</span>
+						<span class="meta__price">£69</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Believe This High Rise High-Rise 7/8 Tights - Women's Training" price_data="69"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item men">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/sport/sport11_1.jpg" alt="Sport 11" /></div>
+						<div class="slider__item"><img src="assets/products/sport/sport11_2.jpg" alt="Sport 11" /></div>
+						<div class="slider__item">Pull on sport-inspired style when you emerge from the gym. These comfortable pants feature the iconic 3-Stripes down the legs for an authentic look.</div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Essentials 3-Stripes Tapered Pants</h3>
+						<span class="meta__brand">Men's Training</span>
+						<span class="meta__price">£40</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Essentials 3-Stripes Tapered Pants - Men's Training" price_data="40"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item women">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/sport/sport12_1.jpg" alt="Sport 12" /></div>
+						<div class="slider__item"><img src="assets/products/sport/sport12_2.jpg" alt="Sport 12" /></div>
+						<div class="slider__item"><img src="assets/products/sport/sport12_3.jpg" alt="Sport 12" /></div>
+						<div class="slider__item">Warm up before the game. Reset after it. On the sidelines or off the field, this sweatshirt keeps you comfortable in soft fleece. Contrast 3-Stripes extend from the shoulders down the sleeves.</div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Essentials 3-Stripes Sweatshirt</h3>
+						<span class="meta__brand">Women's Training</span>
+						<span class="meta__price">£55</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Essentials 3-Stripes Sweatshirt - Women's Training" price_data="55"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item grid__item--size-a men">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/sport/sport14_1.jpg" alt="Sport 13" /></div>
+						<div class="slider__item"><img src="assets/products/sport/sport14_2.jpg" alt="Sport 13" /></div>
+						<div class="slider__item"><img src="assets/products/sport/sport14_3.jpg" alt="Sport 13" /></div>
+						<div class="slider__item">Pull on this hoodie after a long workout. The sweatshirt is built with a soft knit fabric for all-day comfort. A kangaroo pocket provides a place for your essentials.</div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Sport ID Hoodie</h3>
+						<span class="meta__brand">Men's Athletics</span>
+						<span class="meta__price">£75</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Sport ID Hoodie - Men's Athletics" price_data="75"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item women">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/sport/sport13_1.jpg" alt="Sport 14" /></div>
+						<div class="slider__item"><img src="assets/products/sport/sport13_2.jpg" alt="Sport 14" /></div>
+						<div class="slider__item"><img src="assets/products/sport/sport13_3.jpg" alt="Sport 14" /></div>
+						<div class="slider__item">Transition through your day in comfortable style. This hoodie has a loose shape that comfortably layers over your workout clothes.</div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Must Haves 3-Stripes French Terry Hoodie</h3>
+						<span class="meta__brand">Women's Athletics</span>
+						<span class="meta__price">£65</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Must Haves 3-Stripes French Terry Hoodie - Women's Athletics" price_data="65"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item women">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/sport/sport15_1.jpg" alt="Sport 15" /></div>
+						<div class="slider__item"><img src="assets/products/sport/sport15_2.jpg" alt="Sport 15" /></div>
+						<div class="slider__item"><img src="assets/products/sport/sport15_3.jpg" alt="Sport 15" /></div>
+						<div class="slider__item">A hoodie that pulses with adidas energy. Bold contrast graphics stand out on the soft French terry style. The long length gives it a casual and modern feel, plus extra coverage.</div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Graphic Hoodie</h3>
+						<span class="meta__brand">Women's Essentials</span>
+						<span class="meta__price">£70</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Graphic Hoodie - Women's Essentials" price_data="70"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+			</section>
+		</div>
+
+
+		<footer>
+			<div class="links">
+				<div class="footer_filler"></div>
+				<span>UK</span>
+				<img src="assets/uk.png" height="20px" class="flag"/>
+				<span>About Us</span>
+				<span><a href="customiser.html" >Customiser</a></span>
+				<span>&copy; 2018 ADIDAS Inc.</span>
+			</div>
+		</footer>
+
+
+		<script src="js/isotope.pkgd.min.js"></script>
+		<script src="js/flickity.pkgd.min.js"></script>
+		<script src="js/grid.js"></script>
+	</body>
+</html>

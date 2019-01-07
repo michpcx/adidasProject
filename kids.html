@@ -1,0 +1,345 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title>Kids - adidas - Impossible is Nothing.</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" media="screen and (min-width: 1000px)" href="css/main.css" />
+		<link rel="stylesheet" media="screen and (min-width: 1000px)" href="css/navbar.css" />
+		<link rel="stylesheet" media="screen and (min-width: 1000px)" href="css/buttons.css" />
+		<link rel='stylesheet' media='screen and (max-width: 999px)' href='css/main_mobile.css' />
+		<link rel="stylesheet" media="screen and (max-width: 999px)" href="css/buttons_mobile.css" />
+		<link rel="stylesheet" media="screen and (max-width: 999px)" href="css/navbar_mobile.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/grid/flickity.css" />
+		<link rel="stylesheet" type="text/css" href="css/grid/component.css" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<script type="text/javascript" src="https://www.jeasyui.com/easyui/jquery.easyui.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+		<link rel="stylesheet" href="css/category.css" />
+		<script src="js/main.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+		<script src="js/cart.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<nav class="navigation_bar" onclick="animateMenu(this)">
+				<a class="menu_icon">
+					<div class="menu_container">
+		 				<div class="bar1"></div>
+		 				<div class="bar2"></div>
+		 				<div class="bar3"></div>
+					</div>
+				</a>
+				<div class="mobile_menu">
+					<a href="men.html" class="item_menu">Men</a>
+					<a href="women.html" class="item_menu">Women</a>
+					<a href="kids.html" class="item_menu">Kids</a>
+					<hr>
+					<a href="sport.html" class="item_menu">Sport</a>
+					<a href="#" class="item_menu">Collections</a>
+					<a href="customiser.html" class="item_menu">Customiser</a>
+					<hr>
+					<a href="#" class="item_menu">UK</a>
+					<img src="assets/uk.png" height="20px" class="flag"/>
+					<span>&copy; 2018 ADIDAS Inc.</span>
+				</div>
+				<div class="navigation_block mobHide">
+					<ul>
+						<li><a href="men.html">Men</a></li>
+						<li><a href="women.html">Women</a></li>
+						<li><a href="kids.html">Kids</a></li>
+					</ul>
+				</div>
+				<div class="navigation_block">
+					<h1><a href="index.html" >adidas</a></h1>
+				</div>
+				<div class="navigation_block mobHide">
+					<ul>
+						<li><a href="sport.html">Sport</a></li>
+						<li><a>Collections</a></li>
+						<li><a href="customiser.html">Customiser</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<div class="overlay"><a class="close">✖</a>Success!<div class="second_line"> <br>You successfully brought <span class="cart_items_count">0</span> item(s) for <span class="shopping_cart_cost">£0.00</span></div></div>
+		<div class="overlay2"><a class="close2">✖</a>Warning!<div class="second_line"> <br>You haven't selected any shoes to purchase!</div></div>
+
+		<section>
+			<div>
+				<img class="main_img" src="assets/kids_main.jpg" alt="Kids Adidas" />
+			</div>
+		</section>
+
+		<div class="shopping_cart">
+			<span class="shopping_cart_total">Basket</span>
+			<table id="cartcontent" fitColumns="true">
+				<thead>
+					<tr>
+						<th field="name" width=140>Name</th>
+						<th field="quantity" width=60>Quantity</th>
+						<th field="price" width=60 align="right">Price (£)</th>
+					</tr>
+				</thead>
+			</table>
+			<br>
+			<br>
+			<hr>
+			<span class="shopping_cart_cost">£0.00</span>
+			<div class="reset_button_div"><a class="cart_reset_button"><div class="button_margin"></div>Reset</a></div>
+			<div class="buy_button_div"><a class="cart_buy_button"><div class="button_margin"></div>Buy Now</a></div>
+		</div>
+		<div class="basket_icon"></div>
+
+
+		<section>
+			<div class="bar">
+				<div class="filter">
+					<span class="filter__label">Filter: </span>
+					<button class="action filter__item filter__item--selected" data-filter="*">All</button>
+					<button class="action filter__item" data-filter=".yung-96"><i class="ico fas fa-running"></i><span class="action__text">Yung-96</span></button>
+					<button class="action filter__item" data-filter=".superstar"><i class="ico fas fa-solar-panel"></i><span class="action__text">Superstar</span></button>
+					<button class="action filter__item" data-filter=".nmd_r1"><i class="ico fas fa-industry"></i><span class="action__text">NMD_R1</span></button>
+					<button class="action filter__item" data-filter=".ultraboost"><i class="ico fas fa-fighter-jet"></i><span class="action__text">Ultraboost</span></button>
+				</div>
+				<button class="cart">
+					<i class="cart__icon fa fa-shopping-cart"></i>
+					<span class="text-hidden">Shopping cart</span>
+					<span class="cart__count">0</span>
+				</button>
+			</div>
+		</section>
+
+
+		<div class="view">
+			<section class="grid grid--loading">
+				<img class="grid__loader" src="assets/grid.svg" width="60" alt="Loader image" />
+				<div class="grid__sizer"></div>
+				<div class="grid__item ultraboost">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/ultraboost/ultraboost2_1.jpg" alt="Ultraboost 1" /></div>
+						<div class="slider__item"><img src="assets/products/ultraboost/ultraboost2_2.jpg" alt="Ultraboost 1" /></div>
+						<div class="slider__item">Built for performance and comfort, these neutral running shoes give you the feeling of your best-ever run every time you lace them up. They have a lightweight knit upper that adapts to the changing shape of your foot as you run.</div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Ultraboost Shoes</h3>
+						<span class="meta__brand">Kids Unisex Running</span>
+						<span class="meta__price">£60</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Ultraboost Shoes - Kids Unisex Running" price_data="60"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item yung-96">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/yung-96/yung-96-_1.jpg" alt="Yung-96 2" /></div>
+						<div class="slider__item"><img src="assets/products/yung-96/yung-96-_2.jpg" alt="Yung-96 2" /></div>
+						<div class="slider__item"><img src="assets/products/yung-96/yung-96-_3.jpg" alt="Yung-96 2" /></div>
+						<div class="slider__item">The Yung-96 captures the carefree, rebellious spirit of the 1990s. These juniors' shoes offer a retro look with a wide, chunky shape and vibrant colors.</div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Yung-96 Shoes</h3>
+						<span class="meta__brand">Kids Unisex Originals</span>
+						<span class="meta__price">£80</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Yung-96 Shoes - Kids Unisex Originals" price_data="80"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item yung-96">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/yung-96/yung-96-2_1.jpg" alt="Yung-96 3" /></div>
+						<div class="slider__item"><img src="assets/products/yung-96/yung-96-2_2.jpg" alt="Yung-96 3" /></div>
+						<div class="slider__item">The unmistakable style of the late '90s and early 2000s is back. These juniors' shoes have a chunky shape and wide fit inspired by vintage sneakers.</div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Yung-96 Shoes</h3>
+						<span class="meta__brand">Kids Unisex Originals</span>
+						<span class="meta__price">£85</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Yung-96 Shoes - Kids Unisex Originals" price_data="85"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item grid__item--size-a ultraboost">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/ultraboost/ultraboost11_1.jpg" alt="Ultraboost 4" /></div>
+						<div class="slider__item"><img src="assets/products/ultraboost/ultraboost11_2.jpg" alt="Ultraboost 4" /></div>
+						<div class="slider__item"><img src="assets/products/ultraboost/ultraboost11_3.jpg" alt="Ultraboost 4" /></div>
+						<div class="slider__item">Get that best-ever feeling on every run. These neutral shoes have a stretchy knit upper with ventilation in key sweat zones to help you stay cool. Energy-returning cushioning and a flexible outsole work together to give you a smooth ride from touch-down to toe-off. </div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Ultraboost Shoes</h3>
+						<span class="meta__brand">Kids Running</span>
+						<span class="meta__price">£80</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Ultraboost Shoes - Kids Running" price_data="80"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item ultraboost">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/ultraboost/ultraboost15_1.jpg" alt="Ultraboost 5" /></div>
+						<div class="slider__item"><img src="assets/products/ultraboost/ultraboost15_2.jpg" alt="Ultraboost 5" /></div>
+						<div class="slider__item">Get that best-ever feeling on every run. These juniors' neutral shoes have a stretchy knit upper that adapts to the shape of your foot as you move. </div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Ultraboost Shoes</h3>
+						<span class="meta__brand">Kids Unisex Running</span>
+						<span class="meta__price">£140</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Ultraboost Shoes - Kids Unisex Running" price_data="140"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item ultraboost">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/ultraboost/ultraboost_1.jpg" alt="Ultraboost 6" /></div>
+						<div class="slider__item"><img src="assets/products/ultraboost/ultraboost_2.jpg" alt="Ultraboost 6" /></div>
+						<div class="slider__item">Find your best run in these neutral shoes. Built to go the distance on city streets, they have a soft, stretchy knit upper that adapts to the changing shape of your foot as you run for lightweight support. </div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Ultraboost Shoes</h3>
+						<span class="meta__brand">Kids Running</span>
+						<span class="meta__price">£120</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Ultraboost Shoes - Kids Running" price_data="120"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item nmd_r1">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/nmd_r1/nmd_r16_1.jpg" alt="NMD_R1 7" /></div>
+						<div class="slider__item"><img src="assets/products/nmd_r1/nmd_r16_2.jpg" alt="NMD_R1 7" /></div>
+						<div class="slider__item"> These shoes feature a soft knit upper that rides on a responsive Boost midsole, delivering energy return with every stride for all-day comfort. The distinctive midsole plugs offer signature NMD style.</div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">NMD_R1 Shoes</h3>
+						<span class="meta__brand">Kids Unisex Originals</span>
+						<span class="meta__price">£110</span>
+					</div>
+					<button class="action action--button action--buy" name_data="NMD_R1 Shoes - Kids Unisex Originals" price_data="110"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item nmd_r1">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/nmd_r1/nmd_r17_1.jpg" alt="NMD_R1 8" /></div>
+						<div class="slider__item"><img src="assets/products/nmd_r1/nmd_r17_2.jpg" alt="NMD_R1 8" /></div>
+						<div class="slider__item"><img src="assets/products/nmd_r1/nmd_r17_3.jpg" alt="NMD_R1 8" /></div>
+						<div class="slider__item"> Inspired by archival '90s running styles, these juniors' shoes bring modern comfort and flexibility to a vintage look. The soft knit upper hugs the foot for a snug, supportive fit.</div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">NMD_R1 Shoes</h3>
+						<span class="meta__brand">Kids Unisex Originals</span>
+						<span class="meta__price">£80</span>
+					</div>
+					<button class="action action--button action--buy" name_data="NMD_R1 Shoes - Kids Unisex Originals" price_data="80"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item grid__item--size-a nmd_r1">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/nmd_r1/nmd_r18_1.jpg" alt="NMD_R1 9" /></div>
+						<div class="slider__item"><img src="assets/products/nmd_r1/nmd_r18_2.jpg" alt="NMD_R1 9" /></div>
+						<div class="slider__item"><img src="assets/products/nmd_r1/nmd_r18_3.jpg" alt="NMD_R1 9" /></div>
+						<div class="slider__item"><img src="assets/products/nmd_r1/nmd_r18_4.jpg" alt="NMD_R1 9" /></div>
+						<div class="slider__item">These juniors' shoes show off a dynamic mix of contemporary style and technology. They have a minimalist sock-like upper splashed with a bold camouflage print.</div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">NMD_R1 Shoes</h3>
+						<span class="meta__brand">Kids Unisex Originals</span>
+						<span class="meta__price">£110</span>
+					</div>
+					<button class="action action--button action--buy" name_data="NMD_R1 Shoes - Kids Unisex Originals" price_data="110"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item nmd_r1">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/NMD_R1/NMD_R1_1.jpg" alt="NMD_R1 10" /></div>
+						<div class="slider__item"><img src="assets/products/NMD_R1/NMD_R1_1.jpg" alt="NMD_R1 10" /></div>
+						<div class="slider__item">Taking style cues from premium technical outerwear, these shoes blend '80s heritage with modern comfort. The stretchy knit upper is accented with reflective details. </div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">NMD_R1 Shoes</h3>
+						<span class="meta__brand">Kids Unisex Originals</span>
+						<span class="meta__price">£99</span>
+					</div>
+					<button class="action action--button action--buy" name_data="NMD_R1 Shoes - Kids Unisex Originals" price_data="99"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item superstar">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/superstar/superstar_1.jpg" alt="Superstar 11" /></div>
+						<div class="slider__item"><img src="assets/products/superstar/superstar_2.jpg" alt="Superstar 11" /></div>
+						<div class="slider__item">Turn your street style up a notch in these juniors' shoes. An iridescent heel patch and 3-Stripes add a fun touch of shine to these iconic '70s sneakers.</div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Superstar Shoes</h3>
+						<span class="meta__brand">Kids Unisex Originals</span>
+						<span class="meta__price">£75</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Superstar Shoes - Kids Unisex Originals" price_data="75"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item superstar">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/superstar/superstar2_1.jpg" alt="Superstar 12" /></div>
+						<div class="slider__item"><img src="assets/products/superstar/superstar2_2.jpg" alt="Superstar 12" /></div>
+						<div class="slider__item">Turn your street style up a notch in these juniors' shoes. An iridescent heel patch and 3-Stripes add a fun touch of shine to these iconic '70s sneakers.</div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Superstar Shoes</h3>
+						<span class="meta__brand">Kids Unisex Originals</span>
+						<span class="meta__price">£55</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Superstar Shoes - Kids Unisex Originals" price_data="55"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item grid__item--size-a superstar">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/superstar/superstar3_1.jpg" alt="Superstar 13" /></div>
+						<div class="slider__item"><img src="assets/products/superstar/superstar3_2.jpg" alt="Superstar 13" /></div>
+						<div class="slider__item"><img src="assets/products/superstar/superstar3_3.jpg" alt="Superstar 13" /></div>
+						<div class="slider__item">The webbing overlay on these juniors' shoes covers the upper and midsole. The lightweight sneakers are built for a snug, comfortable feel. A flexible, collapsible upper makes them easy to pack.</div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Superstar Shoes</h3>
+						<span class="meta__brand">Kids Unisex Originals</span>
+						<span class="meta__price">£79</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Superstar Shoes - Kids Unisex Originals" price_data="79"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item superstar">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/superstar/superstar4_1.jpg" alt="Superstar 14" /></div>
+						<div class="slider__item"><img src="assets/products/superstar/superstar4_2.jpg" alt="Superstar 14" /></div>
+						<div class="slider__item"><img src="assets/products/superstar/superstar4_3.jpg" alt="Superstar 14" /></div>
+						<div class="slider__item">The webbing overlay on these juniors' shoes covers the upper and midsole. The lightweight sneakers are built for a snug, comfortable feel. A flexible, collapsible upper makes them easy to pack.</div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Superstar Shoes</h3>
+						<span class="meta__brand">Kids Unisex Originals</span>
+						<span class="meta__price">£75</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Superstar Shoes - Kids Unisex Originals" price_data="75"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+				<div class="grid__item superstar">
+					<div class="slider">
+						<div class="slider__item"><img src="assets/products/superstar/superstar5_1.jpg" alt="Superstar 15" /></div>
+						<div class="slider__item"><img src="assets/products/superstar/superstar5_2.jpg" alt="Superstar 15" /></div>
+						<div class="slider__item"><img src="assets/products/superstar/superstar5_3.jpg" alt="Superstar 15" /></div>
+						<div class="slider__item">These juniors' shoes reboot the '70s basketball court classic. This version of the iconic adidas Superstar sneaker features a leather upper with 3-Stripes.</div>
+					</div>
+					<div class="meta">
+						<h3 class="meta__title">Superstar Shoes</h3>
+						<span class="meta__brand">Kids Unisex Originals</span>
+						<span class="meta__price">£70</span>
+					</div>
+					<button class="action action--button action--buy" name_data="Superstar Shoes - Kids Unisex Originals" price_data="70"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+			</section>
+		</div>
+
+
+		<footer>
+			<div class="links">
+				<div class="footer_filler"></div>
+				<span>UK</span>
+				<img src="assets/uk.png" height="20px" class="flag"/>
+				<span>About Us</span>
+				<span><a href="customiser.html" >Customiser</a></span>
+				<span>&copy; 2018 ADIDAS Inc.</span>
+			</div>
+		</footer>
+
+
+		<script src="js/isotope.pkgd.min.js"></script>
+		<script src="js/flickity.pkgd.min.js"></script>
+		<script src="js/grid.js"></script>
+	</body>
+</html>
