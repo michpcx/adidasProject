@@ -22,10 +22,18 @@ $(document).ready(function() {
     // If newsletter button is pressed or buy now button, show message box
     $( ".newsletter_button_link" ).click(function(event) {
       event.preventDefault();
-      $( ".overlay" ).fadeIn( "slow",
-      function() {
-        $( ".overlay" ).delay(5000).fadeOut("slow");
-      });
+      var value=$.trim($(".newsletter_input").val());
+      if(value.length>0) {
+        $( ".overlay" ).fadeIn( "slow",
+        function() {
+          $( ".overlay" ).delay(5000).fadeOut("slow");
+        });
+      }else{
+        $( ".overlay2" ).fadeIn( "slow",
+        function() {
+          $( ".overlay2" ).delay(5000).fadeOut("slow");
+        });
+      }
     });
     $( ".buy_button" ).click(function(event) {
       event.preventDefault();

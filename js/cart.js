@@ -41,6 +41,21 @@ $(document).ready(function() {
   }
   });
 
+  $( ".cart_reset_button" ).click(function(event) {
+    $('#cartcontent').datagrid('deleteRow', 0);
+    //var rows = data.rows;  // get all selected rows
+    //for(var i=0; i<data.total; i++){
+    //  var index = $('#cartcontent').datagrid('getRowIndex',rows.id);  // get the row index
+    //  console.log(i);
+    //  console.log(index);
+    //  console.log(rows.id);
+    //  console.log(data.total);
+    //  $('#cartcontent').datagrid('deleteRow',index);
+    //}
+    margin -= 38;
+    $(".datagrid-view2").css("margin-top", -margin);
+  });
+
 
   $( ".action--buy" ).click(function(event, source) {
     var name = $(this).attr("name_data");
