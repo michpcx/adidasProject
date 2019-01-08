@@ -7,7 +7,7 @@ $(document).ready(function() {
       var soles_added = 0;
       var stripes_added = 0;
 
-      // If first color is pressed, check with shoe is selected, check which part is selected and change that part
+      // If first color is pressed, check with shoe is selected, check which part is selected and change that part after which add the part to the price breakdown and update the total
       $("#color1").click(function () {
         if(shoe == 1){
         if(part == 1){

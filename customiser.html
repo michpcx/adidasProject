@@ -1,9 +1,12 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
 	<head>
+		<!-- Title of the website, viewport and encoding -->
 		<title>Customiser - adidas - Impossible is Nothing.</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 		<meta charset="UTF-8">
+
+		<!-- Links to the css needed on desktop and mobile and link to the Karla font  -->
 		<link rel="stylesheet" media="screen and (min-width: 1000px)" href="css/main.css" />
 		<link rel="stylesheet" media="screen and (min-width: 1000px)" href="css/navbar.css" />
 		<link rel="stylesheet" media="screen and (min-width: 1000px)" href="css/buttons.css" />
@@ -12,15 +15,24 @@
 		<link rel="stylesheet" media="screen and (max-width: 999px)" href="css/buttons_mobile.css" />
 		<link rel="stylesheet" media="screen and (max-width: 999px)" href="css/navbar_mobile.css" />
 		<link rel='stylesheet' media='screen and (max-width: 999px)' href='css/customiser_mobile.css' />
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+
+		<!-- Links to the javascripts -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="js/main.js"></script>
 		<script src="js/customiser.js"></script>
+
 	</head>
 
+
+
+
 	<body>
+		<!-- Top navigation -->
 		<header>
 			<nav class="navigation_bar" onclick="animateMenu(this)">
+
+				<!-- On mobile, 3 bar icon is showed -->
 				<a class="menu_icon">
 					<div class="menu_container">
 		 				<div class="bar1"></div>
@@ -28,6 +40,8 @@
 		 				<div class="bar3"></div>
 					</div>
 				</a>
+
+				<!-- Mobile menu which will slide out once 3 bar icon is pressed -->
 				<div class="mobile_menu">
 					<a href="men.html" class="item_menu">Men</a>
 					<a href="women.html" class="item_menu">Women</a>
@@ -41,6 +55,8 @@
 					<img src="assets/uk.png" height="20px" class="flag"/>
 					<span>&copy; 2018 ADIDAS Inc.</span>
 				</div>
+
+				<!-- Top navigation bar which will be showed on desktops -->
 				<div class="navigation_block mobHide">
 					<ul>
 						<li><a href="men.html">Men</a></li>
@@ -62,58 +78,70 @@
 		</header>
 
 
+
+		<!-- Section which is showed on website opening -->
 		<section>
+			<!-- Message box which will appear when user purchases the shoe -->
 			<div class="overlay"><a class="close">✖</a>Success!<div class="second_line"> <br>You successfully brought Sobakov shoes for <span class="total">£89.99</span>!</div></div>
+
+			<!-- Title of the page -->
 			<div class="title_white">
 				<h1>Customiser</h1>
 			</div>
-				<div id="customiser_output">
-	 				<canvas id="layer1"></canvas>
-	 				<canvas id="layer2"></canvas>
-					<canvas id="layer3"></canvas>
-					<canvas id="layer4"></canvas>
-				</div>
 
-				<div id="colors" >
-					<div id="color1" ></div>
-					<div id="color2" ></div>
-					<div id="color3" ></div>
-					<div id="color4" ></div>
-				</div>
+			<!-- Main part of the customiser where the shoe will be showed -->
+			<div id="customiser_output">
+	 			<canvas id="layer1"></canvas>
+	 			<canvas id="layer2"></canvas>
+				<canvas id="layer3"></canvas>
+				<canvas id="layer4"></canvas>
+			</div>
 
-				<div id="parts" >
-					<div id="laces" ></div>
-					<div id="soles" ></div>
-					<div id="straps"></div>
-				</div>
+			<!-- Left div where user will be able to choose colours -->
+			<div id="colors" >
+				<div id="color1" ></div>
+				<div id="color2" ></div>
+				<div id="color3" ></div>
+				<div id="color4" ></div>
+			</div>
 
-				<div id="shoe_choice">
-					<div id="men" ></div>
-					<div id="women"></div>
-				</div>
+			<!-- Right div where user will be able to choose which part to modify -->
+			<div id="parts" >
+				<div id="laces" ></div>
+				<div id="soles" ></div>
+				<div id="straps"></div>
+			</div>
 
-				<div id="price_breakdown">
-					<table id="price_breakdown_table">
-  					<tr>
-    					<th colspan="2"><h2>Total:</h2></th>
-  					</tr>
-  					<tr id="anchor_extras">
-    					<td class="border-top base">Base Sobakov Men</td>
-    					<td class="border-top">£89.99</td>
-  					</tr>
-						<tr>
-    					<td class="border-top"></td>
-    					<td class="border-top total">£89.99</td>
-  					</tr>
-						<tr>
-    					<td class="reset_button_table"><a class="reset_button"><div class="button_margin"></div>Reset</a></td>
-							<td></td>
-  					</tr>
-						<tr>
-    					<td colspan="2" class="buy_button_table"><a class="buy_button"><div class="button_margin"></div>Buy Now</a></td>
-  					</tr>
-					</table>
-				</div>
+			<!-- Bottom part where user will be able to choose which shoe to modify -->
+			<div id="shoe_choice">
+				<div id="men" ></div>
+				<div id="women"></div>
+			</div>
+
+			<!-- Table where the prices are showed and two buttons to buy the shoe or reset the configuration -->
+			<div id="price_breakdown">
+				<table id="price_breakdown_table">
+					<tr>
+  					<th colspan="2"><h2>Total:</h2></th>
+					</tr>
+					<tr id="anchor_extras">
+  					<td class="border-top base">Base Sobakov Men</td>
+  					<td class="border-top">£89.99</td>
+					</tr>
+					<tr>
+  					<td class="border-top"></td>
+  					<td class="border-top total">£89.99</td>
+					</tr>
+					<tr>
+  					<td class="reset_button_table"><a class="reset_button"><div class="button_margin"></div>Reset</a></td>
+						<td></td>
+					</tr>
+					<tr>
+  					<td colspan="2" class="buy_button_table"><a class="buy_button"><div class="button_margin"></div>Buy Now</a></td>
+					</tr>
+				</table>
+			</div>
+
 		</section>
 
 

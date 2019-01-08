@@ -1,4 +1,4 @@
-/*      MAIN    */
+/*      Main css     */
 html, body{
 	scroll-behavior: smooth;
 	height: 100%;
@@ -19,6 +19,9 @@ header{
 	top: 85vh;
 	right: 3vw;
 }
+
+
+/*      CSS for titles     */
 .title_white{
 	background-color:white;
 	color: black;
@@ -36,6 +39,9 @@ header{
 	text-align:center;
 	font-family: 'adidas';
 }
+
+
+/*      Margins and different boxes and wrappers     */
 .extra_margin, .men_box, .pureboost_box1, .product_box_1, .product_box{
 	margin-top: -40px;
 }
@@ -56,6 +62,9 @@ header{
 .pureboost_box1, .pureboost_box2, .sport_item, .sobakov_item{
 	position:relative;
 }
+
+
+/*      CSS for newsletter box     */
 .newsletter{
 	background-color: #262626;
 	margin-top: -30px;
@@ -90,6 +99,9 @@ header{
 .newsletter_button_link{
 	cursor: pointer;
 }
+
+
+/*      CSS for message boxes     */
 .overlay, .overlay2{
 	position: fixed;
 	text-align: center;
@@ -122,6 +134,9 @@ header{
 	color: white;
 	cursor: pointer;
 }
+
+
+/*      footer CSS     */
 footer{
 	font-size: 1.2rem;
 	text-align:center;
@@ -148,6 +163,9 @@ footer .flag{
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
+
+
+/*      CSS for info boxes that contain product info and their position on mobile    */
 .info_box{
 	color: white;
 	text-align: center;
@@ -173,6 +191,9 @@ footer .flag{
 	font-family: Trebuchet MS, Arial, Helvetica;
 	font-size: 0.9rem;
 }
+
+
+/*      Margins for correct positioning on mobile    */
 .footer_margin{
 	margin-top: 0px;
 }

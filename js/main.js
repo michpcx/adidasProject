@@ -35,6 +35,8 @@ $(document).ready(function() {
         });
       }
     });
+
+    // If buy button is pressed or buy now button, show message box
     $( ".buy_button" ).click(function(event) {
       event.preventDefault();
       $( ".overlay" ).fadeIn( "slow",
@@ -48,7 +50,6 @@ $(document).ready(function() {
       event.preventDefault();
       $( ".overlay" ).hide();
     });
-
     $( ".close2" ).click(function(event) {
       event.preventDefault();
       $( ".overlay2" ).hide();
@@ -58,20 +59,17 @@ $(document).ready(function() {
 		$("body").on('click', '.menu_icon', function() {
 			$(".mobile_menu").toggleClass("menu_show");
 		})
-
-
-
   });
 
 
 // Function which scrolls the website when neeeded
-var adjustAnchor = function() {
-			 var $anchor = $('#scroll-stop'),fixedElementHeight = 55;
-			 if ($anchor.length > 0) {
-					 $('html, body')
-							 .stop()
-							 .animate({scrollTop: $anchor.offset().top - fixedElementHeight}, 200);
-			 }
+  var adjustAnchor = function() {
+  var $anchor = $('#scroll-stop'),fixedElementHeight = 55;
+  if ($anchor.length > 0) {
+	$('html, body')
+	 .stop()
+	 .animate({scrollTop: $anchor.offset().top - fixedElementHeight}, 200);
+	 }
 	 };
 
 // Function which allows to make menu icon animation

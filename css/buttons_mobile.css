@@ -1,3 +1,5 @@
+/* This css file allows links to become fully working buttons */
+/* First we set their looks, colours etc and then their position */
 .button_black_small, .button_white_small{
 	text-decoration:none;
 	text-align:center;
@@ -47,6 +49,9 @@ a.button_white:hover, a.button_white_small:hover{
 	color:white;
 	background-color:black;
 }
+
+
+/* Margins for when the button is too high up */
 .link_box{
 	margin-top: 13px;
 }

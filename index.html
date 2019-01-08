@@ -1,25 +1,41 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
 	<head>
+		<!-- Title of the website, viewport and encoding -->
 		<title>adidas - Impossible is Nothing.</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 		<meta charset="UTF-8">
+
+		<!-- Links to the css needed on desktop and mobile and link to the Karla font  -->
 		<link rel="stylesheet" media="screen and (min-width: 1000px)" href="css/main.css" />
 		<link rel="stylesheet" media="screen and (min-width: 1000px)" href="css/navbar.css" />
 		<link rel="stylesheet" media="screen and (min-width: 1000px)" href="css/buttons.css" />
 		<link rel='stylesheet' media='screen and (max-width: 999px)' href='css/main_mobile.css' />
 		<link rel="stylesheet" media="screen and (max-width: 999px)" href="css/buttons_mobile.css" />
 		<link rel="stylesheet" media="screen and (max-width: 999px)" href="css/navbar_mobile.css" />
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+
+		<!-- Links to the javascripts -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="js/main.js"></script>
+		
 	</head>
 
+
+
+
 	<body>
+		<!-- Two message boxes which will appear when user is using newsletter box -->
 		<div class="overlay"><a class="close">✖</a>Success!<div class="second_line"> <br>Your email has been added to newsletter list successfully.</div></div>
 		<div class="overlay2"><a class="close2">✖</a>Warning!<div class="second_line"> <br>You haven't typed in your email!</div></div>
+
+
+
+		<!-- Top navigation -->
 		<header>
 			<nav class="navigation_bar" onclick="animateMenu(this)">
+
+				<!-- On mobile, 3 bar icon is showed -->
 				<a class="menu_icon">
 					<div class="menu_container">
 		 				<div class="bar1"></div>
@@ -27,6 +43,8 @@
 		 				<div class="bar3"></div>
 					</div>
 				</a>
+
+				<!-- Mobile menu which will slide out once 3 bar icon is pressed -->
 				<div class="mobile_menu">
 					<a href="men.html" class="item_menu">Men</a>
 					<a href="women.html" class="item_menu">Women</a>
@@ -40,6 +58,8 @@
 					<img src="assets/uk.png" height="20px" class="flag"/>
 					<span>&copy; 2018 ADIDAS Inc.</span>
 				</div>
+
+				<!-- Top navigation bar which will be showed on desktops -->
 				<div class="navigation_block mobHide">
 					<ul>
 						<li><a href="men.html">Men</a></li>
@@ -57,30 +77,45 @@
 						<li><a href="customiser.html">Customiser</a></li>
 					</ul>
 				</div>
+
 			</nav>
 		</header>
 
+
+
+		<!-- Section which is showed on website opening -->
 		<section class="video">
+
+			<!-- Video in the background -->
 			<video playsinline autoplay muted loop id="bgvid">
 				<source src="assets/main_video.webm" type="video/webm">
 				<source src="assets/main_video.mp4" type="video/mp4">
 			</video>
 
+			<!-- Adidas logo made in CSS and text underneath it -->
 			<div class="logo-box">
 				<div class="small-dash"></div>
 				<div class="medium-dash"></div>
 				<div class="large-dash"></div>
 			</div>
-
 			<h1 class="logo-box-text">adidas</h1>
 
+			<!-- Arrow which scroll down on press -->
 			<img src="assets/arrow.png" height="3%" alt="Arrow Down" class="arrow" id="scroll-button"/>
+
 		</section>
 
+
+
+		<!-- Second section which will be showed when user scrolls -->
 		<section id="scroll-stop">
+
+			<!-- Title of the section -->
 			<div class="title_white">
 				<h1>Build to Defy</h1>
 			</div>
+
+			<!-- 3 boxes (for men, women and kids) with buttons to go to specific category -->
 			<div class="men_box">
 				<img src="assets/men.jpg" Alt="For Men" class="first_selection"/>
 				<a href ="men.html" class="button_white button_left"><div class="link_box">For men</div></a>
@@ -93,13 +128,23 @@
 				<img src="assets/kids.jpg" Alt="For Kids" class="first_selection"/>
 				<a href ="kids.html" class="button_white button_left"><div class="link_box">For kids</div></a>
 			</div>
+
 		</section>
 
+
+
+		<!-- Another section -->
 		<section>
+
+			<!-- Title of the section -->
 			<div class="title_black extra_margin">
 				<h1>Sobakov Collection</h1>
 			</div>
+
+			<!-- Wrapper which allows to put 3 boxes in one line on desktops -->
 			<div class="inline_wrapper" >
+
+				<!-- 3 boxes which show different shoe and links to the customiser where user can customise them -->
 				<div class="sobakov_item">
 					<img src="assets/sobakov.jpg" Alt="Sobakov 1" class="sobakov_img"/>
 					<a href ="customiser.html" class="button_white_small button_centre"><div class="link_box_2">Shop now</div></a>
@@ -112,13 +157,21 @@
 					<img src="assets/sobakov3.jpg" Alt="Sobakov 3" class="sobakov_img"/>
 					<a href ="customiser.html" class="button_black_small button_centre"><div class="link_box_2">-></div></a>
 				</div>
+
 			</div>
 		</section>
 
+
+
+		<!-- Another section -->
 		<section>
+
+			<!-- Title of the section -->
 			<div class="title_white extra_margin">
 				<h1>PureBoost Collection</h1>
 			</div>
+
+			<!-- Two boxes which show shoes from specific collection -->
 			<div class="pureboost_box1">
 				<img src="assets/pureboost.jpg" Alt="PureBoost 1" class="pureboost_img"/>
 				<div class="info_box info_box_left">Pureboost Go Shoes <br><br><span> Built to handle curbs, corners and uneven sidewalks, these natural running shoes have an expanded landing zone and a heel plate for added stability. A lightweight and stretchy knit upper supports your native stride. Energised cushioning works with the flexible outsole to give you a smooth and comfortable ride.</span></div>
@@ -129,13 +182,23 @@
 				<div class="info_box info_box_right">Pureboost Trainer Shoes <br><br><span> Made for running and cross training, these versatile shoes have a breathable knit upper. A strap at the ankle lends extra support. Responsive cushioning provides endless energy return with every stride. Responsive cushioning returns energy to your stride, and the all-terrain outsole provides optimal traction on wet or slippery surfaces. </span></div>
 				<a href ="men.html" class="button_white button_left"><div class="link_box">Show Now</div></a>
 			</div>
+
 		</section>
 
+
+
+		<!-- Another section -->
 		<section>
+
+			<!-- Title of the section -->
 			<div class="title_black extra_margin">
 				<h1>Heat up your workout</h1>
 			</div>
+
+			<!-- Wrapper which allows to hold two divs in one line on desktop -->
 			<div class="inline_wrapper">
+
+				<!-- Two boxes which show items from sport category and links to them -->
 				<div class="sport_item">
 					<img src="assets/sport.jpg" Alt="Sport 1" class="sport_img"/>
 					<div class="info_box info_box_centre">Don't Rest X Sports Bra <br><br><span> Part of a statement collection inspired by Stella McCartney, this medium-support bra features a subtle embossed print. The lightweight, moisture-wicking fabric keeps you dry as you train. The bra has an easy pullover design with a soft brushed elastic band and removable pads.</span></div>
@@ -147,17 +210,29 @@
 					<a href ="sport.html" class="button_white_small button_centre button_low"><div class="link_box_2">Show Now</div></a>
 				</div>
 			</div>
+
 		</section>
 
+
+
+		<!-- Section with newsletter box -->
 		<section class="newsletter">
+
+			<!-- Main text, input box for email and a button to accept it -->
 			<p>Sign up for news and get <span>10% off</span></p>
 			<form>
 				<input class="newsletter_input" type="text" name="email" placeholder="Please type your email address here">
 				<a class="newsletter_button_link" ><div class="newsletter_button">-></div></a>
 			</form>
+
 		</section>
 
+
+
+		<!-- Footer -->
 		<footer>
+
+			<!-- Div with links to different pages -->
 			<div class="links">
 				<span>UK</span>
 				<img src="assets/uk.png" height="20px" class="flag"/>
@@ -170,4 +245,3 @@
 
 	</body>
 </html>
-<!-- http://matthewbennett.me/ -->

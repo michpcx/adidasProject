@@ -1,4 +1,4 @@
-/*      MAIN		*/
+/*      Main css		*/
 html, body{
 	scroll-behavior: smooth;
 }
@@ -9,6 +9,9 @@ body{
 .navigation_bar{
 	top: 0;
 }
+
+
+/*      CSS to create the main customiser output and to position each canvas correctly		*/
 #customiser_output{
 	position: relative;
 	margin-top: -100px;
@@ -58,6 +61,9 @@ canvas{
   width: 70vw;
   display: block;
 }
+
+
+/*      Rest of CSS for customiser which positions the parts and colours		*/
 #colors{
 	margin-top:23%;
 	transform: translateY(-25%);
@@ -161,6 +167,9 @@ canvas{
 	border:1px solid grey;
 	display:inline-block;
 }
+
+
+/*      CSS that takes care of the prize price breakdown table 	 */
 #price_breakdown_table{
 	position: relative;
 	width: 20%;

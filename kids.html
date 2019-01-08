@@ -1,9 +1,12 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
 	<head>
+		<!-- Title of the website, viewport and encoding -->
 		<title>Kids - adidas - Impossible is Nothing.</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 		<meta charset="UTF-8">
+
+		<!-- Links to the css needed on desktop and mobile and link to the Karla font  -->
 		<link rel="stylesheet" media="screen and (min-width: 1000px)" href="css/main.css" />
 		<link rel="stylesheet" media="screen and (min-width: 1000px)" href="css/navbar.css" />
 		<link rel="stylesheet" media="screen and (min-width: 1000px)" href="css/buttons.css" />
@@ -14,18 +17,27 @@
 		<link rel="stylesheet" type="text/css" href="css/grid/flickity.css" />
 		<link rel="stylesheet" type="text/css" href="css/grid/component.css" />
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-			<script type="text/javascript" src="https://www.jeasyui.com/easyui/jquery.easyui.min.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
 		<link rel="stylesheet" href="css/category.css" />
+
+		<!-- Links to the javascripts -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://www.jeasyui.com/easyui/jquery.easyui.min.js"></script>
 		<script src="js/main.js"></script>
 		<script src="js/modernizr.custom.js"></script>
 		<script src="js/cart.js"></script>
+
 	</head>
 
+
+
+
 	<body>
+		<!-- Top navigation -->
 		<header>
 			<nav class="navigation_bar" onclick="animateMenu(this)">
+
+				<!-- On mobile, 3 bar icon is showed -->
 				<a class="menu_icon">
 					<div class="menu_container">
 		 				<div class="bar1"></div>
@@ -33,6 +45,8 @@
 		 				<div class="bar3"></div>
 					</div>
 				</a>
+
+				<!-- Mobile menu which will slide out once 3 bar icon is pressed -->
 				<div class="mobile_menu">
 					<a href="men.html" class="item_menu">Men</a>
 					<a href="women.html" class="item_menu">Women</a>
@@ -46,6 +60,8 @@
 					<img src="assets/uk.png" height="20px" class="flag"/>
 					<span>&copy; 2018 ADIDAS Inc.</span>
 				</div>
+
+				<!-- Top navigation bar which will be showed on desktops -->
 				<div class="navigation_block mobHide">
 					<ul>
 						<li><a href="men.html">Men</a></li>
@@ -63,20 +79,26 @@
 						<li><a href="customiser.html">Customiser</a></li>
 					</ul>
 				</div>
+
 			</nav>
 		</header>
 
+		<!-- Two message boxes which will appear when user is using the basket -->
 		<div class="overlay"><a class="close">✖</a>Success!<div class="second_line"> <br>You successfully brought <span class="cart_items_count">0</span> item(s) for <span class="shopping_cart_cost">£0.00</span></div></div>
 		<div class="overlay2"><a class="close2">✖</a>Warning!<div class="second_line"> <br>You haven't selected any shoes to purchase!</div></div>
 
+		<!-- Section which is showed on website opening, shows a person from a specific category -->
 		<section>
 			<div>
 				<img class="main_img" src="assets/kids_main.jpg" alt="Kids Adidas" />
 			</div>
 		</section>
 
+		<!-- Shopping cart div which is showed once cart icon is pressed -->
 		<div class="shopping_cart">
 			<span class="shopping_cart_total">Basket</span>
+
+			<!-- Table which has all the items in the cart -->
 			<table id="cartcontent" fitColumns="true">
 				<thead>
 					<tr>
@@ -86,6 +108,8 @@
 					</tr>
 				</thead>
 			</table>
+
+			<!-- Bottom navigation which has total cost and ability to clear the cart and purchase shoes in it -->
 			<div class="bottom_navigation">
 				<hr>
 				<span class="shopping_cart_cost">£0.00</span>
@@ -96,6 +120,8 @@
 		<div class="basket_icon"></div>
 
 
+
+		<!-- Section which is fixed at the bottom of the screen and allows to filter the products -->
 		<section>
 			<div class="bar">
 				<div class="filter">
@@ -106,20 +132,31 @@
 					<button class="action filter__item" data-filter=".nmd_r1"><i class="ico fas fa-project-diagram"></i><span class="action__text">NMD_R1</span></button>
 					<button class="action filter__item" data-filter=".ultraboost"><i class="ico fas fa-fighter-jet"></i><span class="action__text">Ultraboost</span></button>
 				</div>
+
+				<!-- Cart icon which will show basket on press -->
 				<button class="cart">
 					<i class="cart__icon fa fa-shopping-cart"></i>
 					<span class="text-hidden">Shopping cart</span>
 					<span class="cart__count">0</span>
 				</button>
+
 			</div>
 		</section>
 
 
+
+		<!-- Div which will load the products and display them in grid -->
 		<div class="view">
 			<section class="grid grid--loading">
+
+				<!-- Section which will during loading of the product display loading animation -->
 				<img class="grid__loader" src="assets/grid.svg" width="60" alt="Loader image" />
 				<div class="grid__sizer"></div>
+
+				<!-- One of the products divs -->
 				<div class="grid__item ultraboost">
+
+					<!-- Slider in the product allows having multiple slides in one product box -->
 					<div class="slider">
 						<div class="slider__item"><img src="assets/products/ultraboost/ultraboost2_1.jpg" alt="Ultraboost 1" /></div>
 						<div class="slider__item"><img src="assets/products/ultraboost/ultraboost2_2.jpg" alt="Ultraboost 1" /></div>
@@ -130,7 +167,10 @@
 						<span class="meta__brand">Kids Unisex Running</span>
 						<span class="meta__price">£60</span>
 					</div>
+
+					<!-- Button which allows to put the shoes in the cart -->
 					<button class="action action--button action--buy" name_data="Ultraboost Shoes - Kids Unisex Running" price_data="60"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+
 				</div>
 				<div class="grid__item yung-96">
 					<div class="slider">
@@ -326,7 +366,11 @@
 		</div>
 
 
+
+		<!-- Footer -->
 		<footer>
+
+			<!-- Div with links to different pages -->
 			<div class="links">
 				<div class="footer_filler"></div>
 				<span>UK</span>
@@ -337,7 +381,7 @@
 			</div>
 		</footer>
 
-
+		<!-- Scripts added for additional functionality -->
 		<script src="js/isotope.pkgd.min.js"></script>
 		<script src="js/flickity.pkgd.min.js"></script>
 		<script src="js/grid.js"></script>

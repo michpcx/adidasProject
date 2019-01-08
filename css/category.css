@@ -1,3 +1,4 @@
+/* This sets basics for the category pages */
 .main_img{
 	margin-top: 55px;
 	width:100%;
@@ -36,6 +37,8 @@ footer{
 .flag{
 	padding: 0;
 }
+
+
 /* Helper classes */
 .cf:before,
 .cf:after {
@@ -50,6 +53,8 @@ footer{
 	opacity: 0;
 	pointer-events: none;
 }
+
+/* Here we create shopping cart and position it properly */
 .shopping_cart{
 	position: fixed;
 	bottom: 100px;
@@ -139,6 +144,9 @@ hr{
 	cursor: pointer;
 	transition: all 0.2s;
 }
+
+
+/* Rest of the css needed for specific categories */
 #sport_video{
 	width: 100%;
 	margin-top: 55px;
@@ -152,8 +160,7 @@ hr{
 }
 
 
-
-
+/* Few media queries used to help display the website better on mobile */
 @media screen and (max-width: 640px){
 	.shopping_cart{
 		bottom: 70px;
@@ -195,4 +202,7 @@ hr{
 		font-size: 70%;
 	}
 }
+
+
+/* Importing font Lato */
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);

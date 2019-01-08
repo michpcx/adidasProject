@@ -1,4 +1,4 @@
-/*      MAIN    */
+/*      Main css		*/
 html, body{
 	scroll-behavior: smooth;
 }
@@ -12,6 +12,9 @@ body{
 .title_white{
 	margin-top: 55px;
 }
+
+
+/*      CSS to create the main customiser output and to position each canvas correctly on mobile		*/
 #customiser_output{
 	position: relative;
 	margin-top: -70px;
@@ -61,6 +64,9 @@ canvas{
   width: 70vw;
   display: block;
 }
+
+
+/*      Rest of CSS for customiser which positions the parts and colours on mobile		*/
 #colors{
 	width:100%;
 	text-align: center;
@@ -169,6 +175,9 @@ canvas{
 	border:1px solid grey;
 	display:inline-block;
 }
+
+
+/*      CSS that takes care of the prize price breakdown table on mobile  	 */
 #price_breakdown{
 	position: relative;
 	left: 10%;
