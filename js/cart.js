@@ -71,6 +71,10 @@ $(document).ready(function() {
     localStorage.setItem("totalItems", cartItems+1);
   });
 
+  if ($('.datagrid-view1')[0]) {
+      $('.datagrid-view1').delay(200).remove();
+  };
+
 });
 
 

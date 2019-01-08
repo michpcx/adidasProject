@@ -54,7 +54,7 @@ footer{
 	position: fixed;
 	bottom: 100px;
 	right: 5px;
-	height: 75vh;
+	height: 50vh;
 	width:400px;
 	color: white;
 	background-color: #131415;
@@ -95,8 +95,15 @@ table *{
 hr{
 	margin-top: 20px;
 }
-#cartcontent{
-	width: 90%;
+.datagrid{
+	width: 100%;
+	display: flex;
+  flex-direction: column;
+	min-height: calc(100% - 152px);
+}
+.bottom_navigation{
+	margin-top: auto;
+  width: 100%;
 }
 .buy_button_div, .reset_button_div{
 	text-align: center;
